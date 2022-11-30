@@ -1,123 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Just a Wayback</title>
-    <link rel="stylesheet" href="src/css/style.css">
-<body>
-    <header>
-        <a href="index.html">
-            <img src="public/img/logo_justawayback.webp" alt="Logo just a wayback">
-        </a>
-        <p><a href="Homepage.html">EN</a></p>
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <button>
-            <span></span>
-          </button>
-      
-          <nav>
-            <ul>
-              <li><a href="index.html">Accueil</a></li>
-              <li><a href="fr/autres_pages/autresprojets.html">Autres projets</a></li>
-              <li><a href="fr/autres_pages/apropos.html">A propos</a></li>
-              <li><a href="fr/autres_pages/contact.html">Contact</a></li>
-              <li><a href="fr/autres_pages/glossaire.html">Glossaire</a></li>
+      <title>Just a Wayback</title>
+
+      <link rel="stylesheet" href="src/css/style.css">
+
+      <link rel="icon" href="public/img/logo_et_redacteur/logo_justawayback.webp">
+
+      <script src="//unpkg.com/alpinejs" defer></script>
+  </head>
+
+  <body>
+      <header class="header">
+        <a class="header__logoLink" href="/index.html">
+            <img class="header__logo" src="public/img/logo_et_redacteur/logo_justawayback.webp" alt="Logo just a wayback">
+        </a>
+         <a class="header__translateLink" href="#">
+          <img class="header__translateLogo" src="public/icons/gb_flag.svg" alt="Drapeau anglais">
+        </a> 
+        <div x-data="{ isOpen:false }">
+          <img class="header__menuBtn" @click="isOpen = ! isOpen" src="public/icons/menu.svg">
+          <nav class="header__menu" x-show="isOpen">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a class="menu__link" href="index.html">> Accueil</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="fr/autres_pages/autresprojets.html">> Autres projets</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="fr/autres_pages/apropos.html">> A propos</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="fr/autres_pages/contact.html">> Contact</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="fr/autres_pages/glossaire.html">> Glossaire</a>
+              </li>
             </ul>
           </nav>
+        </div>
+      </header>
 
-    </header>
+      <main class="main">
 
-    <main>
+        <section class="section__aLaUne">
 
-      <section>
-        <h1>A la une</h1>
-        <article>
-          <a href="espoir.html">
-            <img src="public/img/Rectangle 5.webp" alt="un ordinateur">
-            <h3>Nouvelles technologies : Comment peuvent elles changer notre quotidien ?</h3>
-            <p>Les technologies deviennent de plus en plus avancées et changent notre façon de vivre. 
+          <h1 class="section__titre">A la une</h1>
+
+          <article class="section__article">
+            <a class="article__link" href="fr/articles/espoir.html">
+              <img class="article__img" src="public/img/articles/photo_espoir.webp" alt="un ordinateur">
+              <h3 class="article__titre">
+                Nouvelles technologies : Comment peuvent elles changer notre quotidien ?
+              </h3>
+              <p class="article__intro">
+                Les technologies deviennent de plus en plus avancées et changent notre façon de vivre. 
                 De la façon dont nous communiquons...
-            </p>
-            <p>Accéder</p>
-          </a>
-        </article>
-      </section>
-      
-      <section>
-        <h1>Découvrez aussi</h1>
-        <article>
-          <a href="regret.html">
-            <img src="public/img/Rectangle 5-1.webp" alt="une fille triste derrière un rideau">
-            <h3>La paresse : Un phénomène en forte augmentation chez les jeunes</h3>
-            <p>Depuis quelques années, on assiste à un phénomène croissant de paresse chez les jeunes. Cela est 
+              </p>
+              <a class="article__btn">
+                Accéder
+              </a>
+            </a>
+          </article>
+        </section>
+        
+        <section class="section__decouvrezAussi">
+
+          <h1 class="section__titre">Découvrez aussi</h1>
+
+          <article class="section__article">
+            <a class="article__link" href="fr/articles/regret.html">
+              <img class="article__img" src="public/img/articles/photo_regret.webp" alt="une fille triste derrière un rideau">
+              <h3 class="article__titre">
+                La paresse : Un phénomène en forte augmentation chez les jeunes
+              </h3>
+              <p class="article__intro">
+                Depuis quelques années, on assiste à un phénomène croissant de paresse chez les jeunes. Cela est 
                 particulièrement évident dans les pays...
-            </p>
-            <p>Accéder</p>
-          </a>
-        </article>
+              </p>
+              <p class="article__btn">
+                Accéder
+              </p>
+            </a>
+          </article>
 
-        <article>
-          <a href="lieu.html">
-            <img src="public/img/Rectangle 5-2.webp" alt="l'apple park">
-            <h3>Silicon vallée : Découvrez son origine et son histoire d’hier à aujourd’hui </h3>
-            <p>L’article ci-dessous couvrent tous les aspects de la plaque tournante de la haute technologie connue 
+          <article>
+            <a class="article__link" href="fr/articles/lieu.html">
+              <img class="article__img" src="public/img/articles/photo_lieu.webp" alt="l'apple park">
+              <h3 class="article__titre">
+                Silicon vallée : Découvrez son origine et son histoire d’hier à aujourd’hui 
+              </h3>
+              <p class="article__intro">
+                L’article ci-dessous couvrent tous les aspects de la plaque tournante de la haute technologie connue 
                 sous le nom de Silicon Valley : son histoire, sa culture, son économie.
-            </p>
-            <p>Accéder</p>
-          </a>
-        </article>
+              </p>
+              <p class="article__btn">
+                Accéder
+              </p>
+            </a>
+          </article>
 
-        <article>
-          <a href="film.html">
-            <img src="public/img/Rectangle 5-3.webp" alt="Morten Tyldum jouant le rôle de Turing">
-            <h3>“Imitation Game” : Une histoire captivante d’amour, de guerre et de génie</h3>
-            <p>Réalisé par Morten Tyldum et écrit par Graham Moore, Imitation Game est basé sur l'histoire vraie de 
+          <article>
+            <a class="article__link" href="fr/articles/film.html">
+              <img class="article__img" src="public/img/articles/photo_film.webp" alt="Morten Tyldum jouant le rôle de Turing">
+              <h3 class="article__titre">
+                “Imitation Game” : Une histoire captivante d’amour, de guerre et de génie
+              </h3>
+              <p class="article__intro">
+                Réalisé par Morten Tyldum et écrit par Graham Moore, Imitation Game est basé sur l'histoire vraie de 
                 comment Turing et son équipe basée à la « Government Code and Cypher School » de Bletchley Park ont 
                 déchiffré le Code Enigma "incassable" des nazis pendant la Seconde Guerre mondiale et à aider à renverser 
                 le cours de la guerre en faveur des Alliés.
-            </p>
-            <p>Accéder</p>
-          </a>
-        </article>
+              </p>
+              <p class="article__btn">
+                Accéder
+              </p>
+            </a>
+          </article>
 
-        <article>
-          <a href="livre.html">
-            <img src="public/img/Rectangle 5-4.webp" alt="des amis devant un coucher de soleil">
-            <h3>“Comment se faire des amis” : Le guide ultime pour se faire des amis</h3>
-            <p>Comment se faire des amis de Dale Carnegie est un livre de développement personnel classique qui s'est 
+          <article>
+            <a class="article__link" href="fr/articles/livre.html">
+              <img class="article__img" src="public/img/articles/photo_livre.webp" alt="des amis devant un coucher de soleil">
+              <h3 class="article__titre">
+                “Comment se faire des amis” : Le guide ultime pour se faire des amis
+              </h3>
+              <p class="article__intro">
+                Comment se faire des amis de Dale Carnegie est un livre de développement personnel classique qui s'est 
                 vendu à des millions d'exemplaires et a été traduit en plusieurs langues. Le livre est basé sur les propres 
                 expériences et observations de Carnegie, ainsi que sur les recherches qu'il a menées sur le sujet des relations 
                 humaines. 
-            </p>
-            <p>Accéder</p>
-          </a>
-        </article>
+              </p>
+              <p class="article__btn">
+                Accéder
+              </p>
+            </a>
+          </article>
 
-        <article>
-          <a href="musique.html">
-            <img src="public/img/Rectangle 5-5.webp" alt="une photo de nekfeu">
-            <h3>Nekfeu "On verra" : un chef-d'œuvre musical</h3>
-            <p>"On verra" est le 11ème titre de l'album "Feu". Le single sorti le 1 mai 2015 est la musique qui signera le 
+          <article>
+            <a class="article__link" href="fr/articles/musique.html">
+              <img class="article__img" src="public/img/articles/photo_musique.webp" alt="une photo de nekfeu">
+              <h3 class="article__titre">
+                Nekfeu "On verra" : un chef-d'œuvre musical
+              </h3>
+              <p class="article__intro">
+                "On verra" est le 11ème titre de l'album "Feu". Le single sorti le 1 mai 2015 est la musique qui signera le 
                 début de son ascension sur la scène française du rap, elle est par ailleurs le titre de l'artiste le plus "connu" 
                 et sera un véritable succès lors de sa sortie été 2015.
-            </p>
-            <p>Accéder</p>
-          </a>
-        </article>
+              </p>
+              <p class="article__btn">
+                Accéder
+              </p>
+            </a>
+          </article>
+           
 
-      </section>
-    </main>
+        </section>
+      </main>
 
-    <footer>
-        <p>© 2022 Just a Wayback</p>
-        <p>"Projet réalisé dans le cadre d'un exercice <br>pédagogique au département <br><a href="http://mmimontbeliard.com/">MMI de Montbéliard</a>"</p>
-        <ul>
-            <li><a href="https://www.linkedin.com/in/adrien-leveque-07657621a/"><img src="public/icons/linkedin.svg" alt="linkedin"></a></li>
-            <li><a href="https://discord.gg/Be8wM5B5"><img src="public/icons/Discord.svg" alt="discord"></a></li>
-        </ul>
-        <a href="mailto:adrien.leveque@edu.univ-fcomte.fr">adrien.leveque@edu.univ-fcomte.fr</a>
-    </footer>
-</body>
+      <footer class="footer">
+          <p class="footer__copyright">© 2022 Just a Wayback</p>
+          <p class="footer__">"Projet réalisé dans le cadre d'un exercice <br>pédagogique au département <br><a href="http://mmimontbeliard.com/">MMI de Montbéliard</a>"</p>
+          <ul class="footer__list">
+              <li class="footer__item">
+                <a class="footer__link" href="https://www.linkedin.com/in/adrien-leveque-07657621a/"><img src="public/icons/linkedin.svg" alt="linkedin"></a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="https://discord.gg/Be8wM5B5"><img src="public/icons/Discord.svg" alt="discord"></a>
+              </li>
+          </ul>
+          <a class="footer_mailto" href="mailto:adrien.leveque@edu.univ-fcomte.fr">adrien.leveque@edu.univ-fcomte.fr</a>
+      </footer>
+  </body>
 </html>

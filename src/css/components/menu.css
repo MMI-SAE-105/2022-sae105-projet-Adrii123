@@ -1,0 +1,33 @@
+.menu__list {
+display: flex;
+flex-direction: column;
+justify-content: center;
+text-align: left;
+
+}
+
+.menu__link {
+    text-decoration: none;
+    color: #404A65;
+    font-size: var(--mobile-xl);
+    font-weight: 300;
+    line-height: 28,8px;
+    letter-spacing: 2%;
+}
+
+.menu__item {
+    list-style: none;
+    padding-top: 21px;
+}
+
+.header__menu {
+    position: fixed;
+    background-color: #FFFFFF;
+    width: 333px;
+    height: 402px;
+    top: 138px;
+    left: 21px;
+    border-radius: 28px;
+    
+} 
+

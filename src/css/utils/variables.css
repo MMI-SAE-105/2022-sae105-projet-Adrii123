@@ -1,0 +1,20 @@
+:root {
+    /* Color styles */
+--fond: rgba(251, 248, 248, 1);
+--pied-de-page: rgba(56, 55, 55, 1);
+--bouton: rgba(241, 212, 86, 1);
+--accueil-et-titrage: rgba(64, 74, 101, 1);
+--soulignage-titrage: rgba(147, 191, 176, 1);
+--lignes--footer-et-logo: rgba(242, 82, 66, 1);
+
+/* Text-size styles */
+--mobile-xs: 14,5px;
+--mobile-s: 16px;
+--mobile-m: 18,5px;
+--mobile-l: 20px;
+--mobile-xl: 24px;
+
+/* Typography */
+--font-family: 'Roboto', sans-serif;
+}
+
