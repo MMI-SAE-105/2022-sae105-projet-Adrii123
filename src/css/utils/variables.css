@@ -8,6 +8,8 @@
 --lignes--footer-et-logo: rgba(242, 82, 66, 1);
 
 /* Text-size styles */
+--mobile-xxxs: 10px;
+--mobile-xxs: 12px;
 --mobile-xs: 14,5px;
 --mobile-s: 16px;
 --mobile-m: 18,5px;

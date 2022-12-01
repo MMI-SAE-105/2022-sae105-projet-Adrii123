@@ -22,7 +22,8 @@ h1, h3, p {
 }
 
 .article__btn {
-    display: block;
+    display: flex;
+    justify-content: flex-end;
     background-color: #F1D456;
     border-radius: 20px;
     border: 1px solid rgba(0, 0, 0, 0.14);
