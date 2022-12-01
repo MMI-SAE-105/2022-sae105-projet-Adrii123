@@ -20,14 +20,19 @@ h1, h3, p {
 }
 
 .article__btn {
-    display: flex;
-    justify-content: flex-end;
+    width: 120px;
+    height: 30px;
+    position: relative;
+    margin: 0 14px 40px auto;
+    z-index: -1;
+} 
+
+.article__btn p {
+    text-align: center;
     background-color: #F1D456;
     border-radius: 20px;
-    border: 1px solid rgba(0, 0, 0, 0.14);
-    width: 100px;
-    height: 30px;
-} 
+    padding: 10px 20px;
+}
 
 .main {
     margin-top: 120px;
