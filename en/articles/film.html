@@ -4,49 +4,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Article Imitation Game - Just a Wayback</title>
+    <title>Imitation Game Article - Just a Wayback</title>
     <link rel="stylesheet" href="/src/css/style.css">
     <link rel="icon" href="/public/img/logo_et_redacteur/logo_justawayback.webp">
     <script src="//unpkg.com/alpinejs" defer></script>
 </head>
 <body>
-    <header class="header">
-        <a class="header__logoLink" href="/index.html">
-            <img class="header__logo" src="/public/img/logo_et_redacteur/logo_justawayback.webp" alt="Logo just a wayback">
-        </a>
-         <a class="header__translateLink" href="#">
-          <img class="header__translateLogo" src="/public/icons/gb_flag.svg" alt="Drapeau anglais">
-        </a> 
-        <div x-data="{ isOpen:false }">
-          <img class="header__menuBtn" @click="isOpen = ! isOpen" src="/public/icons/menu.svg">
-          <nav class="header__menu" x-show="isOpen">
-            <ul class="menu__list">
-              <li class="menu__item">
-                <a class="menu__link" href="index.html">> Accueil</a>
-              </li>
-              <li class="menu__item">
-                <a class="menu__link" href="fr/autres_pages/autresprojets.html">> Autres projets</a>
-              </li>
-              <li class="menu__item">
-                <a class="menu__link" href="fr/autres_pages/apropos.html">> A propos</a>
-              </li>
-              <li class="menu__item">
-                <a class="menu__link" href="fr/autres_pages/contact.html">> Contact</a>
-              </li>
-              <li class="menu__item">
-                <a class="menu__link" href="fr/autres_pages/glossaire.html">> Glossaire</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
+  <header class="header">
+    <a class="header__logoLink" href="/index.html">
+        <img class="header__logo" src="/public/img/logo_et_redacteur/logo_justawayback.webp" alt="Logo just a wayback">
+    </a>
+        <a class="header__translateLink" href="/fr/articles/film.html">
+        <img class="header__translateLogo" src="/public/icons/french_flag.svg" alt="Drapeau français">
+    </a> 
+    <div x-data="{ isOpen: false }">
+        <img class="header__menuBtn" @click="isOpen = ! isOpen" src="/public/icons/menu.svg">
+        <nav class="header__menu" x-show="isOpen">
+        <ul class="menu__list">
+            <li class="menu__item">
+            <a class="menu__link" href="/index.html">> Home</a>
+            </li>
+            <li class="menu__item">
+            <a class="menu__link" href="/en/autres_pages/autresprojets.html">> Other Projects</a>
+            </li>
+            <li class="menu__item">
+            <a class="menu__link" href="/en/autres_pages/apropos.html">> About</a>
+            </li>
+            <li class="menu__item">
+            <a class="menu__link" href="/en/autres_pages/contact.html">> Contact</a>
+            </li>
+            <li class="menu__item">
+            <a class="menu__link" href="/en/autres_pages/glossaire.html">> Glossary</a>
+            </li>
+        </ul>
+        </nav>
+    </div>
     </header>
+
 
     <main class="main__article">
         <section class="article__preface">
                 <img class="article__img" src="/public/img/articles/photo_film.webp" alt="Morten Tyldum jouant le rôle de Turing">
                 <p class="article__source">Illustration : <a href="https://unsplash.com/">Unsplash</a></p>
-                <h1 class="article__grosTitre">Silicon vallée : Découvrez son origine et son histoire d’hier à aujourd’hui </h1>
-                <p class="article__misEnLigne">MIS EN LIGNE 04/10/2022 à 19H24</p>
+                <h1 class="article__grosTitre">Silicon Valley: Discover its origin and history from yesterday to today </h1>
+                <p class="article__misEnLigne">ONLINE 04/10/2022 at 19H24</p>
                     <div class="article__redacteur">
                         <img class="article__imgRedacteur" src="/public/img/logo_et_redacteur/photo_redacteur.webp" alt="portrait du rédacteur">
                         <p class="article__nomRedacteur">Adrien Leveque</p>
@@ -55,71 +56,54 @@
 
         <section class="article__content">
             <p class="article__paragraphe">
-                Réalisé par Morten Tyldum et écrit par Graham Moore, Imitation Game est basé sur l'histoire vraie de comment 
-                Turing et son équipe basée à la « Government Code and Cypher School » de Bletchley Park ont déchiffré 
-                le Code Enigma "incassable" des nazis pendant la Seconde Guerre mondiale et à aider à renverser le cours 
-                de la guerre en faveur des Alliés.
+              Directed by Morten Tyldum and written by Graham Moore, Imitation Game is based on the true story of how Turing and his team based at the Government Code and Cypher School at Bletchley Park deciphered the Nazis' "unbreakable" Enigma Code during World War II and helped turn the tide of the war of the war in favor of the Allies.
             </p>
             
             <p class="article__paragraphe">
-                Mais The Imitation Game ce n'est pas seulement une histoire de guerre ! C'est aussi l'histoire de Turing, 
-                un homme brillant, qui a été renversé par son propre gouvernement. En effet, en 1952, Turing a été reconnu 
-                coupable de "grosse indécence" à la suite d’un acte d'homosexualité alors illégal à l’époque, il a été contraint 
-                de subir une "thérapie" hormonale qui équivalait à une castration chimique. Il s'est suicidé deux ans plus tard 
-                le 7 juin 1954 à l’aide d’une pomme rempli de cyanure.
+              But The Imitation Game is not only a war story! It is also the story of Turing, a brilliant man, who was overthrown by his own government. Indeed, in 1952, Turing was found guilty of "gross indecency" following an act of homosexuality then illegal at the time, he was forced to undergo hormonal "therapy" which was equivalent to chemical castration. He committed suicide two years later on June 7, 1954 with an apple filled with cyanide.
             </p>
 
-            <h3 class="article__interTitre">Des performances remarquables</h3>
+            <h3 class="article__interTitre">Outstanding performance</h3>
 
             <p class="article__paragraphe">
-                Dans le film, Cumberbatch incarne Turing, ayant fait carrière en jouant des excentriques il apporte alors 
-                une certaine énergie au personnage… En effet, il arrive très bien à retranscrire la maladresse sociale de 
-                Turing ainsi que sa profonde tristesse, dressant un portrait tragique du personnage alors même qu’il 
-                triomphe en déchiffrant Enigma.
+              In the film, Cumberbatch plays Turing, having made a career of playing eccentrics, he brings a certain energy to the character. a certain energy to the character... Indeed, he manages very well to retranscribe the social awkwardness of Turing as well as his deep sadness, drawing a tragic portrait of the character even though he Turing's social awkwardness as well as his deep sadness, drawing a tragic portrait of the character even as he triumphs by deciphering Enigma.
             </p>
 
             <p class="article__paragraphe">
-                L'autre performance remarquable du film est Keira Knightley dans le rôle de Joan Clarke, une autre briseuse de 
-                code et la seule femme de l'équipe de Turing. Clarke est un mélange fictif de plusieurs femmes réelles qui ont 
-                travaillé avec Turing à Bletchley Park. Elle a également une bonne alchimie avec Cumberbatch, ce qui est utile 
-                dans l'intrigue secondaire romantique du film. Elle permet aussi dans ce film de souligner le sexisme, quand 
-                Knightley se présente au test organisé par Turing, elle se fait presque expulser, malgré tout elle finit par 
-                être prise pour ses capacités.  
+              The other outstanding performance of the film is Keira Knightley as Joan Clarke, another codebreaker and the only woman in Turing's team. code breaker and the only woman on Turing's team. Clarke is a fictional blend of several real women who worked with who worked with Turing at Bletchley Park. She also has good chemistry with Cumberbatch, which is useful in the film's romantic subplot. She also helps in this film to highlight sexism, when Knightley presents herself to the test organized by Turing, she is almost expelled, despite everything she ends up be taken for her abilities.  
             </p>
 
-            <h3 class="article__interTitre"><a href="/fr/autres_pages/filmographie.html">Découvrez la filmographie du réalisateur ↗</a></h3>
+            <h3 class="article__interTitre"><a href="/en/autres_pages/filmographie.html">Check out the director's filmography</a></h3>
 
             <p class="article__paragraphe">
-                Grace à ce film on comprend que Turing a vraiment été un pilier pour le développement de l’informatique malgré 
-                les difficultés auxquels il a dû faire face. Il restera une inspiration dans le domaine, un mythe dit que Steve 
-                jobs aurai été inspiré par la pomme croqué (instrument de suicide) pour son logo. 
+              Thanks to this film we understand that Turing was really a pillar for the development of computer science despite the difficulties he had to face. He will remain an inspiration in the field, a myth says that Steve jobs would have been inspired by the crunched apple (instrument of suicide) for his logo. 
             </p>
         </section>
 
         <!-- <img src="public/icons/Ligne de séparation d'article.svg" alt="ligne de séparation"> -->
 
         <section class="autre__article">
-            <h4 class="article__recommandation">Cela peut vous intéresser :</h4>
+            <h4 class="article__recommandation">You may be interested in:</h4>
             <a href="livre.html">
                 <img class="article__imgRecommandation" src="/public/img/articles/photo_livre.webp" alt="des amis devant un coucher de soleil">
-                <p class="article__titre">“Comment se faire des amis” : Le guide ultime pour se faire des amis</p>
+                <p class="article__titre">"How to make friends": The ultimate guide to making friends</p>
             </a>
         </section>
     </main>
 
     <footer class="footer">
-        <p class="footer__copyright">© 2022 Just a Wayback</p>
-        <p class="footer__quote">"Projet réalisé dans le cadre d'un exercice <br>pédagogique au département <br><a href="http://mmimontbeliard.com/">MMI de Montbéliard</a>"</p>
-        <ul class="footer__list">
-            <li class="footer__item">
-              <a class="footer__link" href="https://www.linkedin.com/in/adrien-leveque-07657621a/"><img src="/public/icons/linkedin.svg" alt="linkedin"></a>
-            </li>
-            <li class="footer__item">
-              <a class="footer__link" href="https://discord.gg/Be8wM5B5"><img src="/public/icons/Discord.svg" alt="discord"></a>
-            </li>
-        </ul>
-        <a class="footer__mailto" href="mailto:adrien.leveque@edu.univ-fcomte.fr">adrien.leveque@edu.univ-fcomte.fr</a>
-        <!-- <img class="footer__decoration" src="public/img/logo_et_redacteur/Lines.png" alt="lignes de décoration"> -->
-    </footer>
+      <p class="footer__copyright">© 2022 Just a Wayback</p>
+      <p class="footer__quote">"Project carried out as part of an exercise <br>in the department <br><a href="http://mmimontbeliard.com/">MMI de Montbéliard</a>"</p>
+      <ul class="footer__list">
+          <li class="footer__item">
+            <a class="footer__link" href="https://www.linkedin.com/in/adrien-leveque-07657621a/"><img src="/public/icons/linkedin.svg" alt="linkedin"></a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="https://discord.gg/Be8wM5B5"><img src="/public/icons/Discord.svg" alt="discord"></a>
+          </li>
+      </ul>
+      <a class="footer__mailto" href="mailto:adrien.leveque@edu.univ-fcomte.fr">adrien.leveque@edu.univ-fcomte.fr</a>
+      <!-- <img class="footer__decoration" src="public/img/logo_et_redacteur/Lines.png" alt="lignes de décoration"> -->
+  </footer>
 </body>
 </html>
