@@ -18,7 +18,8 @@
 /* Layouts */
 @import url(/src/css/layout/header.css);
 @import url(/src/css/layout/footer.css);
-@import url(/src/css/layout/article.css)
+@import url(/src/css/layout/article.css);
+@import url(/src/css/layout/autrespages.css);
 
 
 
