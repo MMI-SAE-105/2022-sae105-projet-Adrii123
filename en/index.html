@@ -5,9 +5,9 @@
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-      <title>Accueil - Just a Wayback</title>
+      <title>Home - Just a Wayback</title>
 
-      <link rel="stylesheet" href="src/css/style.css">
+      <link rel="stylesheet" href="/src/css/style.css">
       <link rel="icon" href="/public/img/logo_et_redacteur/logo_justawayback.webp">
       <script src="//unpkg.com/alpinejs" defer></script>
   </head>
@@ -15,29 +15,29 @@
   <body>
       <header class="header">
         <a class="header__logoLink" href="/index.html">
-            <img class="header__logo" src="public/img/logo_et_redacteur/logo_justawayback.webp" alt="Logo just a wayback">
+            <img class="header__logo" src="/public/img/logo_et_redacteur/logo_justawayback.webp" alt="Logo just a wayback">
         </a>
-         <a class="header__translateLink" href="#">
-          <img class="header__translateLogo" src="public/icons/gb_flag.svg" alt="Drapeau anglais">
+         <a class="header__translateLink" href="/index.html">
+          <img class="header__translateLogo" src="/public/icons/french_flag.svg" alt="Drapeau français">
         </a> 
         <div x-data="{ isOpen: false }">
-          <img class="header__menuBtn" @click="isOpen = ! isOpen" src="public/icons/menu.svg">
+          <img class="header__menuBtn" @click="isOpen = ! isOpen" src="/public/icons/menu.svg">
           <nav class="header__menu" x-show="isOpen">
             <ul class="menu__list">
               <li class="menu__item">
-                <a class="menu__link" href="index.html">> Accueil</a>
+                <a class="menu__link" href="index.html">> Home</a>
               </li>
               <li class="menu__item">
-                <a class="menu__link" href="fr/autres_pages/autresprojets.html">> Autres projets</a>
+                <a class="menu__link" href="fr/autres_pages/autresprojets.html">> Other Projects</a>
               </li>
               <li class="menu__item">
-                <a class="menu__link" href="fr/autres_pages/apropos.html">> A propos</a>
+                <a class="menu__link" href="fr/autres_pages/apropos.html">> About</a>
               </li>
               <li class="menu__item">
                 <a class="menu__link" href="fr/autres_pages/contact.html">> Contact</a>
               </li>
               <li class="menu__item">
-                <a class="menu__link" href="fr/autres_pages/glossaire.html">> Glossaire</a>
+                <a class="menu__link" href="fr/autres_pages/glossaire.html">> Glossary</a>
               </li>
             </ul>
           </nav>
@@ -48,20 +48,19 @@
 
         <section class="section__aLaUne">
 
-          <h1 class="section__titre">A la une</h1>
+          <h1 class="section__titre">In the news</h1>
 
           <article class="section__article">
             <a class="article__link" href="fr/articles/espoir.html">
-              <img class="article__img" src="public/img/articles/photo_espoir.webp" alt="un ordinateur">
+              <img class="article__img" src="/public/img/articles/photo_espoir.webp" alt="un ordinateur">
               <h3 class="article__titre">
-                Nouvelles technologies : Comment peuvent elles changer notre quotidien ?
+                New technologies: How can they change our daily life ?
               </h3>
               <p class="article__intro">
-                Les technologies deviennent de plus en plus avancées et changent notre façon de vivre. 
-                De la façon dont nous communiquons...
+                Technologies are becoming more and more advanced and changing the way we live. From the way we communicate...
               </p>
               <div class="article__btn">
-                <p>Accéder</p>
+                <p>Access</p>
               </div>
             </a>
           </article>
@@ -69,89 +68,80 @@
         
         <section class="section__decouvrezAussi">
 
-          <h1 class="section__titre">Découvrez aussi</h1>
+          <h1 class="section__titre">Also discover</h1>
 
           <article class="section__article">
             <a class="article__link" href="fr/articles/regret.html">
-              <img class="article__img" src="public/img/articles/photo_regret.webp" alt="une fille triste derrière un rideau">
+              <img class="article__img" src="/public/img/articles/photo_regret.webp" alt="une fille triste derrière un rideau">
               <h3 class="article__titre">
-                La paresse : Un phénomène en forte augmentation chez les jeunes
+                Laziness: A phenomenon on the rise among young people
               </h3>
               <p class="article__intro">
-                Depuis quelques années, on assiste à un phénomène croissant de paresse chez les jeunes. Cela est 
-                particulièrement évident dans les pays...
+                In recent years, there has been a growing phenomenon of laziness among young people. This is particularly particularly evident in the countries...
               </p>
               <div class="article__btn">
-                <p>Accéder</p>
+                <p>Access</p>
               </div>
             </a>
           </article>
 
           <article>
             <a class="article__link" href="fr/articles/lieu.html">
-              <img class="article__img" src="public/img/articles/photo_lieu.webp" alt="l'apple park">
+              <img class="article__img" src="/public/img/articles/photo_lieu.webp" alt="l'apple park">
               <h3 class="article__titre">
-                Silicon vallée : Découvrez son origine et son histoire d’hier à aujourd’hui 
+                Silicon Valley: Discover its origin and history from yesterday to today 
               </h3>
               <p class="article__intro">
-                L’article ci-dessous couvrent tous les aspects de la plaque tournante de la haute technologie connue 
-                sous le nom de Silicon Valley : son histoire, sa culture, son économie.
+                The article below covers all aspects of the high-tech hub known as Silicon Valley known as Silicon Valley: its history, its culture, its economy.
               </p>
               <div class="article__btn">
-                <p>Accéder</p>
+                <p>Access</p>
               </div>
             </a>
           </article>
 
           <article>
             <a class="article__link" href="fr/articles/film.html">
-              <img class="article__img" src="public/img/articles/photo_film.webp" alt="Morten Tyldum jouant le rôle de Turing">
+              <img class="article__img" src="/public/img/articles/photo_film.webp" alt="Morten Tyldum jouant le rôle de Turing">
               <h3 class="article__titre">
-                “Imitation Game” : Une histoire captivante d’amour, de guerre et de génie
+                "Imitation Game": A captivating story of love, war and genius
               </h3>
               <p class="article__intro">
-                Réalisé par Morten Tyldum et écrit par Graham Moore, Imitation Game est basé sur l'histoire vraie de 
-                comment Turing et son équipe basée à la « Government Code and Cypher School » de Bletchley Park ont 
-                déchiffré le Code Enigma "incassable" des nazis pendant la Seconde Guerre mondiale et à aider à renverser 
-                le cours de la guerre en faveur des Alliés.
-              </p>
+                Directed by Morten Tyldum and written by Graham Moore, Imitation Game is 
+                based on the true story of how Turing deciphered the Nazis' "unbreakable" 
+                Enigma Code during World War II...
               <div class="article__btn">
-                <p>Accéder</p>
+                <p>Access</p>
               </div>
             </a>
           </article>
 
           <article>
             <a class="article__link" href="fr/articles/livre.html">
-              <img class="article__img" src="public/img/articles/photo_livre.webp" alt="des amis devant un coucher de soleil">
+              <img class="article__img" src="/public/img/articles/photo_livre.webp" alt="des amis devant un coucher de soleil">
               <h3 class="article__titre">
-                “Comment se faire des amis” : Le guide ultime pour se faire des amis
+                "Comment se faire des amis": The ultimate guide to making friends
               </h3>
               <p class="article__intro">
-                Comment se faire des amis de Dale Carnegie est un livre de développement personnel classique qui s'est 
-                vendu à des millions d'exemplaires et a été traduit en plusieurs langues. Le livre est basé sur les propres 
-                expériences et observations de Carnegie, ainsi que sur les recherches qu'il a menées sur le sujet des relations 
-                humaines. 
+                Dale Carnegie's How to Make Friends is a classic self-help book that has sold millions of copies and has been translated into several languages... 
               </p>
               <div class="article__btn">
-                <p>Accéder</p>
+                <p>Access</p>
               </div>
             </a>
           </article>
 
           <article>
             <a class="article__link" href="fr/articles/musique.html">
-              <img class="article__img" src="public/img/articles/photo_musique.webp" alt="une photo de nekfeu">
+              <img class="article__img" src="/public/img/articles/photo_musique.webp" alt="une photo de nekfeu">
               <h3 class="article__titre">
-                Nekfeu "On verra" : un chef-d'œuvre musical
+                Nekfeu "On verra" : a musical masterpiece
               </h3>
               <p class="article__intro">
-                "On verra" est le 11ème titre de l'album "Feu". Le single sorti le 1 mai 2015 est la musique qui signera le 
-                début de son ascension sur la scène française du rap, elle est par ailleurs le titre de l'artiste le plus "connu" 
-                et sera un véritable succès lors de sa sortie été 2015.
+                "On verra" is the 11th track from the album "Feu". The single released on May 1, 2015 is the music that will sign the beginning of his rise on the French rap scene...
               </p>
               <div class="article__btn">
-                <p>Accéder</p>
+                <p>Access</p>
               </div>
             </a>
           </article>
@@ -162,13 +152,13 @@
 
       <footer class="footer">
           <p class="footer__copyright">© 2022 Just a Wayback</p>
-          <p class="footer__quote">"Projet réalisé dans le cadre d'un exercice <br>pédagogique au département <br><a href="http://mmimontbeliard.com/">MMI de Montbéliard</a>"</p>
+          <p class="footer__quote">"Project carried out as part of an exercise <br>in the department <br><a href="http://mmimontbeliard.com/">MMI de Montbéliard</a>"</p>
           <ul class="footer__list">
               <li class="footer__item">
-                <a class="footer__link" href="https://www.linkedin.com/in/adrien-leveque-07657621a/"><img src="public/icons/linkedin.svg" alt="linkedin"></a>
+                <a class="footer__link" href="https://www.linkedin.com/in/adrien-leveque-07657621a/"><img src="/public/icons/linkedin.svg" alt="linkedin"></a>
               </li>
               <li class="footer__item">
-                <a class="footer__link" href="https://discord.gg/Be8wM5B5"><img src="public/icons/Discord.svg" alt="discord"></a>
+                <a class="footer__link" href="https://discord.gg/Be8wM5B5"><img src="/public/icons/Discord.svg" alt="discord"></a>
               </li>
           </ul>
           <a class="footer__mailto" href="mailto:adrien.leveque@edu.univ-fcomte.fr">adrien.leveque@edu.univ-fcomte.fr</a>
