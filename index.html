@@ -8,9 +8,7 @@
       <title>Accueil - Just a Wayback</title>
 
       <link rel="stylesheet" href="src/css/style.css">
-
       <link rel="icon" href="/public/img/logo_et_redacteur/logo_justawayback.webp">
-
       <script src="//unpkg.com/alpinejs" defer></script>
   </head>
 
@@ -22,7 +20,7 @@
          <a class="header__translateLink" href="#">
           <img class="header__translateLogo" src="public/icons/gb_flag.svg" alt="Drapeau anglais">
         </a> 
-        <div x-data="{ isOpen:false }">
+        <div x-data="{ isOpen: false }">
           <img class="header__menuBtn" @click="isOpen = ! isOpen" src="public/icons/menu.svg">
           <nav class="header__menu" x-show="isOpen">
             <ul class="menu__list">
