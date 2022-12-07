@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regret - Just a Wayback</title>
+    <link rel="stylesheet" href="/src/css/style.css">
+    <link rel="icon" href="/public/img/logo_et_redacteur/logo_justawayback.webp">
+    <script src="//unpkg.com/alpinejs" defer></script>
+</head>
+<body>
+    <header class="header">
+        <a class="header__logoLink" href="/index.html">
+            <img class="header__logo" src="/public/img/logo_et_redacteur/logo_justawayback.webp" alt="Logo just a wayback">
+        </a>
+         <a class="header__translateLink" href="#">
+          <img class="header__translateLogo" src="/public/icons/gb_flag.svg" alt="Drapeau anglais">
+        </a> 
+        <div x-data="{ isOpen:false }">
+          <img class="header__menuBtn" @click="isOpen = ! isOpen" src="/public/icons/menu.svg">
+          <nav class="header__menu" x-show="isOpen">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a class="menu__link" href="index.html">> Accueil</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="fr/autres_pages/autresprojets.html">> Autres projets</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="fr/autres_pages/apropos.html">> A propos</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="fr/autres_pages/contact.html">> Contact</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="fr/autres_pages/glossaire.html">> Glossaire</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+    </header>
+
+    <main class="main__article">
+        <section class="article__preface">
+                <img class="article__img" src="/public/img/articles/photo_regret.webp" alt="une fille triste derrière un rideau">
+                <p class="article__source">Illustration : <a href="https://unsplash.com/">Unsplash</a></p>
+                <h1 class="article__grosTitre">La paresse : Un phénomène en forte augmentation chez les jeunes</h1>
+                <p class="article__misEnLigne">MIS EN LIGNE 04/10/2022 à 19H24</p>
+                    <div class="article__redacteur">
+                        <img class="article__imgRedacteur" src="/public/img/logo_et_redacteur/photo_redacteur.webp" alt="portrait du rédacteur">
+                        <p class="article__nomRedacteur">Adrien Leveque</p>
+                    </div>   
+        </section>
+
+        <section class="article__content">
+            <p class="article__paragraphe">
+                Depuis quelques années, on assiste à un phénomène croissant de paresse chez les jeunes. 
+                Cela est particulièrement évident dans les pays développés, où les 
+                jeunes ont facilement accès à la technologie et peuvent mener une vie 
+                relativement confortable.
+            </p>
+            
+            <h3 class="article__interTitre">Différentes raisons qui peut l'expliquer</h3>
+
+            <p class="article__paragraphe">
+                Il existe un certain nombre de raisons pour lesquelles la paresse est à la hausse chez les jeunes. 
+                L'une des raisons est que les jeunes subissent plus de pression que jamais auparavant. 
+                Avec l'essor des réseaux sociaux et le cycle d'actualités 24h/24, les jeunes sont constamment 
+                bombardés d'informations et de notifications. Cela peut être écrasant, et il est plus facile de rester 
+                au lit et de parcourir les réseaux sociaux que d'affronter la journée.
+            </p>
+
+            <p class="article__paragraphe">
+                Une autre raison de la montée de la paresse chez les jeunes est qu'ils ont moins de responsabilités que les générations précédentes. 
+                Avec l'avènement du télétravail, de nombreux jeunes peuvent travailler à domicile et définir leurs propres horaires. 
+                Cela peut conduire à un sentiment de droit, et les jeunes peuvent avoir le sentiment qu'ils n'ont pas besoin de travailler dur parce 
+                qu'ils ne sont pas encadrés en présentiel par un supérieur. 
+            </p>
+
+            <p class="article__paragraphe">
+                Enfin, la paresse chez les jeunes peut aussi résulter de l'augmentation du coût de la vie. Dans de nombreux pays développés, le coût du logement, 
+                de l'éducation et des soins de santé a augmenté plus rapidement que les salaires. Cela signifie que les jeunes ont moins de revenus disponibles et 
+                qu'ils peuvent être moins motivés à travailler dur parce qu'ils n'ont pas l'impression d’être rémunéré justement.
+            </p>
+
+            <h3 class="article__interTitre">Des conséquences néfastes</h3>
+
+            <p class="article__paragraphe">
+                Quelles que soient les raisons de la tendance croissante à la paresse chez les jeunes, il est clair qu'elle a un impact 
+                négatif sur la société. Les jeunes n'atteignent pas leur plein potentiel, ce qui a des répercussions sur l'économie et la 
+                société dans son ensemble mais peut aussi avoir de graves répercussions sur la santé.
+            </p>
+        </section>
+
+        <!-- <img src="public/icons/Ligne de séparation d'article.svg" alt="ligne de séparation"> -->
+
+        <section class="autre__article">
+            <h4 class="article__recommandation">Cela peut vous intéresser :</h4>
+            <a href="lieu.html">
+                <img class="article__imgRecommandation" src="/public/img/articles/photo_lieu.webp" alt="l'apple park">
+                <p class="article__titre">Silicon vallée : Découvrez son origine et son histoire d’hier à aujourd’hui </p>
+            </a>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p class="footer__copyright">© 2022 Just a Wayback</p>
+        <p class="footer__quote">"Projet réalisé dans le cadre d'un exercice <br>pédagogique au département <br><a href="http://mmimontbeliard.com/">MMI de Montbéliard</a>"</p>
+        <ul class="footer__list">
+            <li class="footer__item">
+              <a class="footer__link" href="https://www.linkedin.com/in/adrien-leveque-07657621a/"><img src="/public/icons/linkedin.svg" alt="linkedin"></a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="https://discord.gg/Be8wM5B5"><img src="/public/icons/Discord.svg" alt="discord"></a>
+            </li>
+        </ul>
+        <a class="footer__mailto" href="mailto:adrien.leveque@edu.univ-fcomte.fr">adrien.leveque@edu.univ-fcomte.fr</a>
+        <!-- <img class="footer__decoration" src="public/img/logo_et_redacteur/Lines.png" alt="lignes de décoration"> -->
+    </footer>
+</body>
+</html>
