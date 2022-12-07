@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <title>Accueil - Just a Wayback</title>
+
+      <link rel="stylesheet" href="/src/css/style.css">
+      <link rel="icon" href="/public/img/logo_et_redacteur/logo_justawayback.webp">
+      <script src="//unpkg.com/alpinejs" defer></script>
+  </head>
+
+  <body>
+      <header class="header">
+        <a class="header__logoLink" href="/index.html">
+            <img class="header__logo" src="/public/img/logo_et_redacteur/logo_justawayback.webp" alt="Logo just a wayback">
+        </a>
+         <a class="header__translateLink" href="#">
+          <img class="header__translateLogo" src="/public/icons/gb_flag.svg" alt="Drapeau anglais">
+        </a> 
+        <div x-data="{ isOpen:false }">
+          <img class="header__menuBtn" @click="isOpen = ! isOpen" src="/public/icons/menu.svg">
+          <nav class="header__menu" x-show="isOpen">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a class="menu__link" href="index.html">> Accueil</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="fr/autres_pages/autresprojets.html">> Autres projets</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="fr/autres_pages/apropos.html">> A propos</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="fr/autres_pages/contact.html">> Contact</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="fr/autres_pages/glossaire.html">> Glossaire</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+    <main>
+        <h1>Lieux similaires</h1>
+        <img src="public/icons/Arrow 2.svg" alt="Flèche">
+        <li>
+            <img src="public/img/Rectangle 21.webp" alt="photo du paysage urbain de Bangalore">
+            <h3>2006 : Bangalore - Inde</h3>
+            <p>Depuis plusieurs années, Bangalore est surnomé la 
+                “Silicon vallée indienne”. La ville indienne situé au Sud
+                Est de l’inde a axé son dévellopement sur le secteur 
+                des hautes technologies. Un grand nombre de socié-
+                tés de la tech sont venu s’y installer. 
+            </p>
+            <p>
+                <a href="https://fr.wikipedia.org/wiki/Bangalore">En découvrir davantage</a>
+            </p>
+        </li>
+
+        <li>
+            <img src="public/img/Rectangle 26.webp" alt="photo du paysage urbain de Seoul">
+            <h3>2013 : Seoul - Corée du Sud</h3>
+            <p>Avec plusieurs universités technologiques d’envergure mondiale, Séoul est une ville ultra-connecté et à la pointe de la recherche scientifique. 
+                Elle affiche clairement une  spécialisation en santé (bioingénierie, cancérologie, gastroentérologie et pharmacie).
+            </p>
+            <p>
+                <a href="https://www.cairn.info/revue-outre-terre2-2014-2-page-91.html">En découvrir davantage</a>
+            </p>
+        </li>
+
+        <li>
+            <img src="public/img/Rectangle 28.webp" alt="photo du paysage urbain de Pekin">
+            <h3>2015 : Pekin - Chine</h3>
+            <p>Pékin a fait de grands progrès en développant un centre national des sciences et 
+                de la technologie, plusieurs organisations de renommée nationale et mondiale classant 
+                la ville comme l'un des principaux centres scientifiques et technologiques au monde.
+            </p>
+            <p>
+                <a href="http://www.chinadaily.com.cn/m/beijing/zhongguancun/2019-03/29/content_37453438.htm">En découvrir davantage</a>
+            </p>
+        </li>
+    </main>
+
+    <footer class="footer">
+        <p class="footer__copyright">© 2022 Just a Wayback</p>
+        <p class="footer__quote">"Projet réalisé dans le cadre d'un exercice <br>pédagogique au département <br><a href="http://mmimontbeliard.com/">MMI de Montbéliard</a>"</p>
+        <ul class="footer__list">
+            <li class="footer__item">
+              <a class="footer__link" href="https://www.linkedin.com/in/adrien-leveque-07657621a/"><img src="/public/icons/linkedin.svg" alt="linkedin"></a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="https://discord.gg/Be8wM5B5"><img src="/public/icons/Discord.svg" alt="discord"></a>
+            </li>
+        </ul>
+        <a class="footer__mailto" href="mailto:adrien.leveque@edu.univ-fcomte.fr">adrien.leveque@edu.univ-fcomte.fr</a>
+        <!-- <img class="footer__decoration" src="public/img/logo_et_redacteur/Lines.png" alt="lignes de décoration"> -->
+    </footer>
+</body>
+</html>
