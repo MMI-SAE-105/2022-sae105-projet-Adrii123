@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <title>Accueil - Just a Wayback</title>
+
+      <link rel="stylesheet" href="/src/css/style.css">
+      <link rel="icon" href="/public/img/logo_et_redacteur/logo_justawayback.webp">
+      <script src="//unpkg.com/alpinejs" defer></script>
+  </head>
+
+  <body>
+      <header class="header">
+        <a class="header__logoLink" href="/index.html">
+            <img class="header__logo" src="/public/img/logo_et_redacteur/logo_justawayback.webp" alt="Logo just a wayback">
+        </a>
+         <a class="header__translateLink" href="#">
+          <img class="header__translateLogo" src="/public/icons/gb_flag.svg" alt="Drapeau anglais">
+        </a> 
+        <div x-data="{ isOpen:false }">
+          <img class="header__menuBtn" @click="isOpen = ! isOpen" src="/public/icons/menu.svg">
+          <nav class="header__menu" x-show="isOpen">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a class="menu__link" href="index.html">> Accueil</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="fr/autres_pages/autresprojets.html">> Autres projets</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="fr/autres_pages/apropos.html">> A propos</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="fr/autres_pages/contact.html">> Contact</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="fr/autres_pages/glossaire.html">> Glossaire</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+    <main>
+        <h1>Extrait du livre</h1>
+        <img src="public/img/Dale-Carnegie-Comment-se-faire-des-amis 1.webp" alt="couverture du livre">
+        <p>Pour tirer de ce livre le bienfait maximum, il faut 
+            une qualité essentielle, plus importante que tous 
+            les principes. Sans cette disposition fondamentale, 
+            les meilleurs préceptes ne vous serviraient à rien. 
+            Mais, si vous la possédez, vous accomplirez des 
+            merveilles sans avoir besoin de lire ces suggestions
+        </p>
+
+        <p>Quelle est donc cette condition magique? Tout
+            simplement ceci : le désir profond et irrésistible 
+            de vous perfectionner, la volonté d’apprendre à 
+            mieux vous entendre avec votre entourage. 
+        </p>
+
+        <p>Comment pouvez-vous développer ce désir ? En 
+            gardant constamment présente à l’esprit l’impor-
+            tance qu’ont pour vous les principes recommandés 
+            ici. Représentez-vous la vie plus heureuse que vous 
+            mènerez en les appliquant. Répétez-vous inlassa-
+            blement: «Mon bonheur, mon succès, ma réputation 
+            dépendent en grande partie du talent que je saurai 
+            déployer dans les rapports avec mes semblables.»
+        </p>
+
+        <p>Préface - Huit conseils qui vous permettront de tirer de ce livre le bienfait maximums.</p>
+    </main>
+
+    <footer class="footer">
+        <p class="footer__copyright">© 2022 Just a Wayback</p>
+        <p class="footer__quote">"Projet réalisé dans le cadre d'un exercice <br>pédagogique au département <br><a href="http://mmimontbeliard.com/">MMI de Montbéliard</a>"</p>
+        <ul class="footer__list">
+            <li class="footer__item">
+              <a class="footer__link" href="https://www.linkedin.com/in/adrien-leveque-07657621a/"><img src="/public/icons/linkedin.svg" alt="linkedin"></a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="https://discord.gg/Be8wM5B5"><img src="/public/icons/Discord.svg" alt="discord"></a>
+            </li>
+        </ul>
+        <a class="footer__mailto" href="mailto:adrien.leveque@edu.univ-fcomte.fr">adrien.leveque@edu.univ-fcomte.fr</a>
+        <!-- <img class="footer__decoration" src="public/img/logo_et_redacteur/Lines.png" alt="lignes de décoration"> -->
+    </footer>
+</body>
+</html>
