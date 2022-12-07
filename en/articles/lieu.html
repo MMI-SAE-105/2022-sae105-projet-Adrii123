@@ -1,52 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Article Silicon Vallée - Just a Wayback</title>
-    <link rel="stylesheet" href="/src/css/style.css">
-    <link rel="icon" href="/public/img/logo_et_redacteur/logo_justawayback.webp">
-    <script src="//unpkg.com/alpinejs" defer></script>
-</head>
-<body>
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <title>Regret Article - Just a Wayback</title>
+
+      <link rel="stylesheet" href="/src/css/style.css">
+      <link rel="icon" href="/public/img/logo_et_redacteur/logo_justawayback.webp">
+      <script src="//unpkg.com/alpinejs" defer></script>
+  </head>
+
+  <body>
     <header class="header">
-        <a class="header__logoLink" href="/index.html">
-            <img class="header__logo" src="/public/img/logo_et_redacteur/logo_justawayback.webp" alt="Logo just a wayback">
-        </a>
-         <a class="header__translateLink" href="#">
-          <img class="header__translateLogo" src="/public/icons/gb_flag.svg" alt="Drapeau anglais">
-        </a> 
-        <div x-data="{ isOpen:false }">
-          <img class="header__menuBtn" @click="isOpen = ! isOpen" src="/public/icons/menu.svg">
-          <nav class="header__menu" x-show="isOpen">
-            <ul class="menu__list">
-              <li class="menu__item">
-                <a class="menu__link" href="index.html">> Accueil</a>
-              </li>
-              <li class="menu__item">
-                <a class="menu__link" href="fr/autres_pages/autresprojets.html">> Autres projets</a>
-              </li>
-              <li class="menu__item">
-                <a class="menu__link" href="fr/autres_pages/apropos.html">> A propos</a>
-              </li>
-              <li class="menu__item">
-                <a class="menu__link" href="fr/autres_pages/contact.html">> Contact</a>
-              </li>
-              <li class="menu__item">
-                <a class="menu__link" href="fr/autres_pages/glossaire.html">> Glossaire</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
+    <a class="header__logoLink" href="/index.html">
+        <img class="header__logo" src="/public/img/logo_et_redacteur/logo_justawayback.webp" alt="Logo just a wayback">
+    </a>
+        <a class="header__translateLink" href="/fr/articles/lieu.html">
+        <img class="header__translateLogo" src="/public/icons/french_flag.svg" alt="Drapeau français">
+    </a> 
+    <div x-data="{ isOpen: false }">
+        <img class="header__menuBtn" @click="isOpen = ! isOpen" src="/public/icons/menu.svg">
+        <nav class="header__menu" x-show="isOpen">
+        <ul class="menu__list">
+            <li class="menu__item">
+            <a class="menu__link" href="/index.html">> Home</a>
+            </li>
+            <li class="menu__item">
+            <a class="menu__link" href="/en/autres_pages/autresprojets.html">> Other Projects</a>
+            </li>
+            <li class="menu__item">
+            <a class="menu__link" href="/en/autres_pages/apropos.html">> About</a>
+            </li>
+            <li class="menu__item">
+            <a class="menu__link" href="/en/autres_pages/contact.html">> Contact</a>
+            </li>
+            <li class="menu__item">
+            <a class="menu__link" href="/en/autres_pages/glossaire.html">> Glossary</a>
+            </li>
+        </ul>
+        </nav>
+    </div>
     </header>
 
     <main class="main__article">
         <section class="article__preface">
                 <img class="article__img" src="/public/img/articles/photo_lieu.webp" alt="l'apple park">
                 <p class="article__source">Illustration : <a href="https://unsplash.com/">Unsplash</a></p>
-                <h1 class="article__grosTitre">Silicon vallée : Découvrez son origine et son histoire d’hier à aujourd’hui </h1>
-                <p class="article__misEnLigne">MIS EN LIGNE 04/10/2022 à 19H24</p>
+                <h1 class="article__grosTitre">Silicon Valley: Discover its origin and history from yesterday to today </h1>
+                <p class="article__misEnLigne">ONLINE 04/10/2022 at 19H24</p>
                     <div class="article__redacteur">
                         <img class="article__imgRedacteur" src="/public/img/logo_et_redacteur/photo_redacteur.webp" alt="portrait du rédacteur">
                         <p class="article__nomRedacteur">Adrien Leveque</p>
@@ -55,62 +58,46 @@
 
         <section class="article__content">
             <p class="article__paragraphe">
-                L’article ci-dessous couvrent tous les aspects de la plaque tournante de la haute technologie connue 
-                sous le nom de Silicon Valley : son histoire, sa culture, son économie.
+              The article below covers all aspects of the high-tech hub known as Silicon Valley known as Silicon Valley: its history, its culture, its economy.
             </p>
             
-            <h3 class="article__interTitre">La naissance de la Silicon vallée</h3>
+            <h3 class="article__interTitre">The birth of Silicon Valley</h3>
 
             <p class="article__paragraphe">
-                Le terme "Silicon Valley" a été utilisé pour la première fois en 1971 par l'éditeur de magazine électronique Don Hoefler, 
-                qui a publié une série d'articles sur l'industrie naissante des semi-conducteurs de la région. Le nom est resté, et 
-                aujourd'hui Silicon Valley est synonyme de technologie de pointe.
+              The term "Silicon Valley" was first used in 1971 by electronics magazine editor Don Hoefler, who published a series of articles about the region's burgeoning semiconductor industry. The name stuck, and today Silicon Valley is synonymous with cutting-edge technology.
             </p>
 
             <p class="article__paragraphe">
-                Silicon Valley est un surnom pour la partie sud de la région de la baie de San Francisco, dans la vallée de Santa Clara, 
-                qui sert de centre mondial pour la haute technologie, le capital-risque et l'innovation. La région abrite bon nombre des 
-                plus grandes entreprises technologiques du monde, ainsi que des milliers de startups. Et ce n'est pas seulement une 
-                entre autres industries. 
+              Silicon Valley is a nickname for the southern part of the San Francisco Bay Area in the Santa Clara Valley, which serves as a global center for high technology, venture capital and innovation. The region is home to many of the world's largest technology companies in the world, as well as thousands of startups. And it's not just one among other industries. 
             </p>
 
-            <h3 class="article__interTitre article__itemLink"><a href="/fr/autres_pages/frise-lieu-similaire.html">Découvrez d’autres lieux de hautes <br>technologies</a></h3>
+            <h3 class="article__interTitre article__itemLink"><a href="/fr/autres_pages/frise-lieu-similaire.html">Discover other high technology places technologies</a></h3>
 
             <p class="article__paragraphe">
-                La région trouve ses origines dans la vallée de Santa Clara, qui était autrefois connue pour ses vergers d'abricotiers et de pruniers. 
-                À la fin du 19e siècle, la région est devenue le foyer d'un certain nombre de grands domaines, et plus tard encore, elle est devenue le 
-                site de l'Université de Stanford. Après la Seconde Guerre mondiale, la vallée de Santa Clara s'est transformée en une plaque tournante 
-                pour les entrepreneurs de la défense, et dans les années 1950 et 1960, elle est devenue connue pour son industrie aérospatiale.
+              The region has its origins in the Santa Clara Valley, which was once known for its apricot and plum orchards. In the late 19th century, the area became home to a number of large estates, and later still, it became the site of Stanford University. After World War II, the Santa Clara Valley became a hub for defense contractors, and in the 1950s and 1960s, it became known for its aerospace industry.
             </p>
 
             <p class="article__paragraphe">
-                La Silicon Valley que nous connaissons aujourd'hui a vraiment pris forme dans les années 1970, lorsque des entreprises comme Apple 
-                et Hewlett-Packard ont été fondées et lorsque l'Université de Stanford a établi son campus de la Silicon Valley. Dans les années 80, 
-                la région est devenue la Mecque du capital-risque, et dans les années 90, c'est le berceau d'Internet.
+              The Silicon Valley we know today really took shape in the 1970s, when companies like Apple and Hewlett-Packard were founded and when Stanford University established its Silicon Valley campus. By the 1980s, the region became a mecca for venture capitalists, and in the 1990s, it was the birthplace of the Internet.
             </p>
 
             <p class="article__paragraphe">
-                Aujourd'hui, la Silicon Valley abrite certaines des entreprises les plus précieuses au monde, notamment Google, Facebook et Apple. 
-                C'est aussi devenu un centre mondial d'innovation, avec des dizaines de startups créées chaque année.
+              Today, Silicon Valley is home to some of the world's most valuable companies, including Google, Facebook and Apple. It has also become a global center of innovation, with dozens of startups created each year.
             </p>
 
-            <h3 class="article__interTitre">Une culture particulière</h3>
+            <h3 class="article__interTitre">A particular culture</h3>
 
             <p class="article__paragraphe">
-                La culture de la Silicon Valley est souvent décrite comme « méritocratique », ce qui signifie que le succès est basé sur les 
-                capacités, et non sur les relations ou les liens familiaux. La région est également connue pour son style de vie décontracté 
-                et son code vestimentaire décontracté. "tongs et jeans" est la norme, même au travail.
+              The culture of Silicon Valley is often described as "meritocratic," meaning that success is based on ability, not relationships or family ties. ability, not relationships or family ties. The region is also known for its laid-back lifestyle and its casual dress code. "Flip-flops and jeans" is the norm, even at work.
             </p>
 
-            <h3 class="article__interTitre">La liaison de l’économie et des technologies</h3>
+            <h3 class="article__interTitre">The link between economy and technology</h3>
             <p class="article__paragraphe">
-                L'économie de la Silicon Valley repose en grande partie sur l'industrie technologique, qui emploie une grande partie de la 
-                main-d'œuvre de la région. La région abrite également un certain nombre de sociétés de capital-risque, qui financent les startups.
+              Silicon Valley's economy is largely based on the technology industry, which employs much of the region's workforce. The region is also home to a number of venture capital firms, which fund startups.
             </p>
 
             <p class="article__paragraphe">
-                Que vous l'aimiez ou que vous la détestiez, il est indéniable que la Silicon Valley est une force puissante dans le 
-                monde de la technologie et de l'innovation.
+              Love it or hate it, there's no denying that Silicon Valley is a powerful force in the world of technology and innovation.
             </p>
 
         </section>
@@ -118,27 +105,27 @@
         <!-- <img src="public/icons/Ligne de séparation d'article.svg" alt="ligne de séparation"> -->
 
         <section class="autre__article">
-            <h4 class="article__recommandation">Cela peut vous intéresser :</h4>
+            <h4 class="article__recommandation">You may be interested in:</h4>
             <a href="film.html">
                 <img class="article__imgRecommandation" src="/public/img/articles/photo_film.webp" alt="Morten Tyldum jouant le rôle de Turing">
-                <p class="article__titre">“Imitation Game” : Une histoire captivante d’amour, de guerre et de génie</p>
+                <p class="article__titre">"Imitation Game": A captivating story of love, war and genius</p>
             </a>
         </section>
     </main>
 
     <footer class="footer">
-        <p class="footer__copyright">© 2022 Just a Wayback</p>
-        <p class="footer__quote">"Projet réalisé dans le cadre d'un exercice <br>pédagogique au département <br><a href="http://mmimontbeliard.com/">MMI de Montbéliard</a>"</p>
-        <ul class="footer__list">
-            <li class="footer__item">
-              <a class="footer__link" href="https://www.linkedin.com/in/adrien-leveque-07657621a/"><img src="/public/icons/linkedin.svg" alt="linkedin"></a>
-            </li>
-            <li class="footer__item">
-              <a class="footer__link" href="https://discord.gg/Be8wM5B5"><img src="/public/icons/Discord.svg" alt="discord"></a>
-            </li>
-        </ul>
-        <a class="footer__mailto" href="mailto:adrien.leveque@edu.univ-fcomte.fr">adrien.leveque@edu.univ-fcomte.fr</a>
-        <!-- <img class="footer__decoration" src="public/img/logo_et_redacteur/Lines.png" alt="lignes de décoration"> -->
-    </footer>
+      <p class="footer__copyright">© 2022 Just a Wayback</p>
+      <p class="footer__quote">"Project carried out as part of an exercise <br>in the department <br><a href="http://mmimontbeliard.com/">MMI de Montbéliard</a>"</p>
+      <ul class="footer__list">
+          <li class="footer__item">
+            <a class="footer__link" href="https://www.linkedin.com/in/adrien-leveque-07657621a/"><img src="/public/icons/linkedin.svg" alt="linkedin"></a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="https://discord.gg/Be8wM5B5"><img src="/public/icons/Discord.svg" alt="discord"></a>
+          </li>
+      </ul>
+      <a class="footer__mailto" href="mailto:adrien.leveque@edu.univ-fcomte.fr">adrien.leveque@edu.univ-fcomte.fr</a>
+      <!-- <img class="footer__decoration" src="public/img/logo_et_redacteur/Lines.png" alt="lignes de décoration"> -->
+  </footer>
 </body>
 </html>
