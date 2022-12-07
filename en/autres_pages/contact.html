@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Just a Wayback</title>
+    <link rel="stylesheet" href="/src/css/style.css">
+    <link rel="icon" href="/public/img/logo_et_redacteur/logo_justawayback.webp">
+    <script src="//unpkg.com/alpinejs" defer></script>
+</head>
+<body>
+    <header class="header">
+        <a class="header__logoLink" href="/index.html">
+            <img class="header__logo" src="/public/img/logo_et_redacteur/logo_justawayback.webp" alt="Logo just a wayback">
+        </a>
+         <a class="header__translateLink" href="#">
+          <img class="header__translateLogo" src="/public/icons/gb_flag.svg" alt="Drapeau anglais">
+        </a> 
+        <div x-data="{ isOpen:false }">
+          <img class="header__menuBtn" @click="isOpen = ! isOpen" src="/public/icons/menu.svg">
+          <nav class="header__menu" x-show="isOpen">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a class="menu__link" href="index.html">> Accueil</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="fr/autres_pages/autresprojets.html">> Autres projets</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="fr/autres_pages/apropos.html">> A propos</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="fr/autres_pages/contact.html">> Contact</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="fr/autres_pages/glossaire.html">> Glossaire</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+    </header>
+
+    <main class="main__autrespages">
+        <h1 class="autrespages__titre">On adore vous écouter, restons en contact</h1>
+        <div class="contact__formulaire">
+          <form action="#">
+              <label class="item__title" for="last-name">Votre Nom</label>
+              <input type="text" name="last-name" id="last-name">
+
+              <label class="item__title" for="first-name">Votre Prénom</label>
+              <input type="text" name="first-name" id="first-name">
+
+              <label class="item__title" for="email">Votre adresse mail</label>
+              <input type="text" name="email" id="email">
+
+              <label class="item__title" for="message">Votre message</label>
+              <textarea name="message" id="message" cols="30" rows="1"></textarea>
+              <div class="contact__envoyer">
+                <input type="submit" value="Envoyer">
+              </div>
+          </form>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p class="footer__copyright">© 2022 Just a Wayback</p>
+        <p class="footer__quote">"Projet réalisé dans le cadre d'un exercice <br>pédagogique au département <br><a href="http://mmimontbeliard.com/">MMI de Montbéliard</a>"</p>
+        <ul class="footer__list">
+            <li class="footer__item">
+              <a class="footer__link" href="https://www.linkedin.com/in/adrien-leveque-07657621a/"><img src="/public/icons/linkedin.svg" alt="linkedin"></a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="https://discord.gg/Be8wM5B5"><img src="/public/icons/Discord.svg" alt="discord"></a>
+            </li>
+        </ul>
+        <a class="footer__mailto" href="mailto:adrien.leveque@edu.univ-fcomte.fr">adrien.leveque@edu.univ-fcomte.fr</a>
+        <!-- <img class="footer__decoration" src="public/img/logo_et_redacteur/Lines.png" alt="lignes de décoration"> -->
+    </footer>
+</body>
+</html>
+
+
