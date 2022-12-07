@@ -1,52 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Article Nouvelles Technologies - Just a Wayback</title>
-    <link rel="stylesheet" href="/src/css/style.css">
-    <link rel="icon" href="/public/img/logo_et_redacteur/logo_justawayback.webp">
-    <script src="//unpkg.com/alpinejs" defer></script>
-</head>
-<body>
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <title>New Technologies Article - Just a Wayback</title>
+
+      <link rel="stylesheet" href="/src/css/style.css">
+      <link rel="icon" href="/public/img/logo_et_redacteur/logo_justawayback.webp">
+      <script src="//unpkg.com/alpinejs" defer></script>
+  </head>
+
+  <body>
     <header class="header">
-        <a class="header__logoLink" href="/index.html">
-            <img class="header__logo" src="/public/img/logo_et_redacteur/logo_justawayback.webp" alt="Logo just a wayback">
-        </a>
-         <a class="header__translateLink" href="#">
-          <img class="header__translateLogo" src="/public/icons/gb_flag.svg" alt="Drapeau anglais">
-        </a> 
-        <div x-data="{ isOpen:false }">
-          <img class="header__menuBtn" @click="isOpen = ! isOpen" src="/public/icons/menu.svg">
-          <nav class="header__menu" x-show="isOpen">
-            <<ul class="menu__list">
-                <li class="menu__item">
-                  <a class="menu__link" href="/index.html">> Accueil</a>
-                </li>
-                <li class="menu__item">
-                  <a class="menu__link" href="/fr/autres_pages/autresprojets.html">> Autres projets</a>
-                </li>
-                <li class="menu__item">
-                  <a class="menu__link" href="/fr/autres_pages/apropos.html">> A propos</a>
-                </li>
-                <li class="menu__item">
-                  <a class="menu__link" href="/fr/autres_pages/contact.html">> Contact</a>
-                </li>
-                <li class="menu__item">
-                  <a class="menu__link" href="/fr/autres_pages/glossaire.html">> Glossaire</a>
-                </li>
-              </ul>
-          </nav>
-        </div>
+    <a class="header__logoLink" href="/index.html">
+        <img class="header__logo" src="/public/img/logo_et_redacteur/logo_justawayback.webp" alt="Logo just a wayback">
+    </a>
+        <a class="header__translateLink" href="/fr/articles/espoir.html">
+        <img class="header__translateLogo" src="/public/icons/french_flag.svg" alt="Drapeau français">
+    </a> 
+    <div x-data="{ isOpen: false }">
+        <img class="header__menuBtn" @click="isOpen = ! isOpen" src="/public/icons/menu.svg">
+        <nav class="header__menu" x-show="isOpen">
+        <ul class="menu__list">
+            <li class="menu__item">
+            <a class="menu__link" href="/index.html">> Home</a>
+            </li>
+            <li class="menu__item">
+            <a class="menu__link" href="/en/autres_pages/autresprojets.html">> Other Projects</a>
+            </li>
+            <li class="menu__item">
+            <a class="menu__link" href="/en/autres_pages/apropos.html">> About</a>
+            </li>
+            <li class="menu__item">
+            <a class="menu__link" href="/en/autres_pages/contact.html">> Contact</a>
+            </li>
+            <li class="menu__item">
+            <a class="menu__link" href="/en/autres_pages/glossaire.html">> Glossary</a>
+            </li>
+        </ul>
+        </nav>
+    </div>
     </header>
 
     <main class="main__article">
         <section class="article__preface">
                 <img class="article__img" src="/public/img/articles/photo_espoir.webp" alt="un ordinateur">
                 <p class="article__source">Illustration : <a href="https://unsplash.com/">Unsplash</a></p>
-                <h1 class="article__grosTitre">Nouvelles technologies : Comment peuvent elles changer notre quotidien ?</h1>
-                <p class="article__misEnLigne">MIS EN LIGNE 04/10/2022 à 19H24</p>
+                <h1 class="article__grosTitre">New technologies: How can they change our daily life?</h1>
+                <p class="article__misEnLigne">ONLINE 04/10/2022 at 19H24</p>
                     <div class="article__redacteur">
                         <img class="article__imgRedacteur" src="/public/img/logo_et_redacteur/photo_redacteur.webp" alt="portrait du rédacteur">
                         <p class="article__nomRedacteur">Adrien Leveque</p>
@@ -55,94 +58,67 @@
 
         <section class="article__content">
             <p class="article__paragraphe">
-                Les technologies deviennent de plus en plus 
-                avancées et changent notre façon de vivre. 
-                De la façon dont nous communiquons à 
-                la façon dont nous travaillons et jouons.
-                En clair les nouvelles technologies rendent 
-                nos vies plus pratiques, efficaces et amusantes.
+                Technologies are becoming more and more advanced and changing the way we live. From the way we communicate to the way we the way we work and play. Simply put, new technologies are making our lives more our lives more convenient, efficient and fun.
             </p>
             
-            <h3 class="article__interTitre">Elle est la plus connu</h3>
+            <h3 class="article__interTitre">It is the most famous</h3>
 
             <p class="article__paragraphe">
-                L'une des nouvelles technologies les plus répandues 
-                est le smartphone. Les smartphones nous permettent de 
-                rester connectés avec nos amis et notre famille, où que nous soyons. 
-                Nous pouvons également les utiliser pour accéder à Internet, ce qui 
-                nous offre un monde d'informations et de divertissements à portée de main. 
-                De plus, il existe de nombreuses applications qui peuvent nous faciliter 
-                la vie, comme les applications GPS, de suivi des calories et bien d’autres…
+                One of the most widespread new technologies is the smartphone. Smartphones allow us to stay connected with our friends and family, wherever we are. We can also use them to access the Internet, which us a world of information and entertainment at our fingertips. In addition, there are many applications that can make our lives easier, such as life, such as GPS applications, calorie trackers and many others...
             </p>
 
-            <h3 class="article__interTitre">Mais elle n'est pas la seule</h3>
+            <h3 class="article__interTitre">But it is not the only one</h3>
 
             <p class="article__paragraphe">
-                Mais les smartphones ne sont qu'un exemple de la façon dont les nouvelles 
-                technologies changent nos vies. On peut citer d'autres exemples telle que :
+                But smartphones are just one example of how new technologies are changing our lives. technologies are changing our lives. We can cite other examples such as :
             </p>
 
             <ul>
                 <li>
                     <p class="article__paragraphe">
-                        La <a class="article__itemLink" href="https://fr.wikipedia.org/wiki/Technologie_portable">technologie portable</a>, on pense alors 
-                        aux trackers de sport, aux montres connectées. Ces appareils deviennent 
-                        de plus en plus populaires, ils nous permettent de suivre nos objectifs 
-                        et de rester connectés même lorsque nous sommes en déplacement.    
+                        The <a class="article__itemLink" href="https://fr.wikipedia.org/wiki/Technologie_portable">wearable technology</a>, we think then sports trackers, connected watches. These devices are becoming more and more popular, they allow us to follow our goals and stay and stay connected even when we are on the move.    
                     </p>
                 </li>
                 <li>  
                     <p class="article__paragraphe">
-                        La <a class="article__itemLink"" href="https://fr.wikipedia.org/wiki/R%C3%A9alit%C3%A9_augment%C3%A9e">réalité augmentée</a>, considérée 
-                        comme le futur avec le metaverse, cette technologie est utilisée dans de plus en 
-                        plus d'applications de jeu, et elle a le potentiel de transformer la 
-                        façon dont nous interagissons avec le monde qui nous entoure. 
+                        The <a class="article__itemLink"" href="https://fr.wikipedia.org/wiki/R%C3%A9alit%C3%A9_augment%C3%A9e">virtual reality</a>, considered as the future with the metaverse, this technology is used in more and more the future with the metaverse, this technology is being used in more and more gaming applications, and it has the potential to transform the way we interact the way we interact with the world around us. 
                     </p> 
                 </li>
                 <li>  
                     <p class="article__paragraphe">
-                        Les <a class="article__itemLink" href="https://fr.wikipedia.org/wiki/V%C3%A9hicule_autonome">voiture autonome</a>, bien qu'elles 
-                        ne le soient pas encore totalement, elles pourraient bientôt révolutionner notre 
-                        façon de voyager, malgré tout cette technologie reste inaccessible à une 
-                        grande partie de la population.
+                        The <a class="article__itemLink" href="https://fr.wikipedia.org/wiki/V%C3%A9hicule_autonome">autonomous cars</a>, although they are not yet fully they are not yet fully developed, they could soon revolutionize our way of way of travelling, despite all this technology remains inaccessible to a large a large part of the population.
                     </p> 
                 </li>
                 <li>  
                     <p class="article__paragraphe">
-                        La <a class="article__itemLink" href="https://fr.wikipedia.org/wiki/Domotique">domotique</a>, des thermostats intelligents 
-                        aux robots aspirateurs, la domotique rend nos maisons plus efficaces et plus faciles à 
-                        vivre, elle est le futur de la maison autonome.
+                        The <a class="article__itemLink" href="https://fr.wikipedia.org/wiki/Domotique">home automation</a>, from smart thermostats to robot vacuum cleaners to vacuum cleaners, home automation makes our homes more efficient and easier to live in. easier to live in, it is the future of the autonomous house.
                     </p> 
                 </li>
                 <li>  
                     <p class="article__paragraphe">
-                        L'<a class="article__itemLink" href="https://fr.wikipedia.org/wiki/Domotique">impression 3D</a>, cette technologie devient 
-                        de plus en plus abordable et accessible, et elle a le potentiel de changer la 
-                        façon dont nous fabriquons des biens.
+                        The <a class="article__itemLink" href="https://fr.wikipedia.org/wiki/Domotique">3D print</a>, this technology is becoming increasingly affordable and accessible, and it has the potential to change the way we make the way we manufacture goods.
                     </p> 
                 </li>
             </ul>
             <p class="article__paragraphe">
-                Ce ne sont là que quelques exemples de la façon dont les nouvelles technologies changent nos vies. 
-                À mesure que les technologies deviennent plus avancées, la manière dont 
-                elles peuvent changer nos vies deviendra encore plus fascinante.
+                These are just a few examples of how new technologies are changing our lives. As technologies become more advanced, the ways in which they can change our lives will become change our lives will become even more fascinating.
             </p>
         </section>
 
         <!-- <img src="public/icons/Ligne de séparation d'article.svg" alt="ligne de séparation"> -->
 
         <section class="autre__article">
-            <h4 class="article__recommandation">Cela peut vous intéresser :</h4>
+            <h4 class="article__recommandation">You may be interested in:</h4>
             <a href="regret.html">
                 <img  class="article__imgRecommandation" src="/public/img/articles/photo_regret.webp" alt="une fille triste derrière un rideau">
-                <p class="article__titre">La paresse : Un phénomène en forte augmentation chez les jeunes</p>
+                <p class="article__titre">Laziness: A phenomenon on the rise among young people</p>
             </a>
         </section>
     </main>
 
     <footer class="footer">
         <p class="footer__copyright">© 2022 Just a Wayback</p>
-        <p class="footer__quote">"Projet réalisé dans le cadre d'un exercice <br>pédagogique au département <br><a href="http://mmimontbeliard.com/">MMI de Montbéliard</a>"</p>
+        <p class="footer__quote">"Project carried out as part of an exercise <br>in the department <br><a href="http://mmimontbeliard.com/">MMI de Montbéliard</a>"</p>
         <ul class="footer__list">
             <li class="footer__item">
               <a class="footer__link" href="https://www.linkedin.com/in/adrien-leveque-07657621a/"><img src="/public/icons/linkedin.svg" alt="linkedin"></a>
