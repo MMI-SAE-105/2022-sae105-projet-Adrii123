@@ -1,7 +1,7 @@
 - NOM : Leveque 
 - PRÉNOM : Adrien
-- URL du site :
-- URL FIGMA :
+- URL du site : https://just-a-wayback.adrienleveque.fr/
+- URL FIGMA : https://www.figma.com/file/194sMCukQW3BxCBC3LDTtd/Maquette-projet-individuel-%E2%80%94-Adrien-Leveque?node-id=801%3A989&t=KX6cOCDt5VdsuFrY-1
 
 # Structure de départ pour le projet individuel.
 
