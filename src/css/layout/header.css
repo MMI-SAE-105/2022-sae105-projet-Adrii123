@@ -16,12 +16,13 @@
 
 .header__menuBtn {
     display: block;
-    margin-top: 57px;
-    margin-right: 25px;
+    position: absolute;
+    top: 57px;
+    right: 35px;
 }
 
 .header__translateLogo {
-    display: block;
-    margin-top: 65px;
-    margin-left: 45px;
+    position: absolute;
+    top: 65px;
+    right: 100px;
 }
