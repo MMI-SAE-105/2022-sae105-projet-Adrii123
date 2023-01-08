@@ -19,26 +19,29 @@
         </a> 
         <div x-data="{ isOpen:false }">
           <img class="header__menuBtn" @click="isOpen = ! isOpen" src="/public/icons/menu.svg">
-          <nav class="header__menu" x-show="isOpen">
-            <ul class="menu__list">
-              <li class="menu__item">
-                <a class="menu__link" href="index.html">> Accueil</a>
-              </li>
-              <li class="menu__item">
-                <a class="menu__link" href="fr/autres_pages/autresprojets.html">> Autres projets</a>
-              </li>
-              <li class="menu__item">
-                <a class="menu__link" href="fr/autres_pages/apropos.html">> A propos</a>
-              </li>
-              <li class="menu__item">
-                <a class="menu__link" href="fr/autres_pages/contact.html">> Contact</a>
-              </li>
-              <li class="menu__item">
-                <a class="menu__link" href="fr/autres_pages/glossaire.html">> Glossaire</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
+          <div class="test" x-show="isOpen">
+            <nav class="header__menu">
+              <ul class="menu__list">
+                <li class="menu__item">
+                  <a class="menu__link" href="/index.html">> Accueil</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="/fr/autres_pages/autresprojets.html">> Autres projets</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="/fr/autres_pages/apropos.html">> A propos</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="/fr/autres_pages/contact.html">> Contact</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="/fr/autres_pages/glossaire.html">> Glossaire</a>
+                </li>
+              </ul>
+            </nav>
+            </div>
+            <div class="close__menu" x-show="isOpen" @click="isOpen = ! isOpen"></div>
+          </div>
     </header>
 
     <main class="main__article">

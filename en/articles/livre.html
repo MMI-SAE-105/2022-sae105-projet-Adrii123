@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Article "Comment se faire des amis" - Just a Wayback</title>
+    <title>"Comment se faire des amis" Article - Just a Wayback</title>
     <link rel="stylesheet" href="/src/css/style.css">
     <link rel="icon" href="/public/img/logo_et_redacteur/logo_justawayback.webp">
     <script src="//unpkg.com/alpinejs" defer></script>
@@ -14,30 +14,33 @@
         <a class="header__logoLink" href="/index.html">
             <img class="header__logo" src="/public/img/logo_et_redacteur/logo_justawayback.webp" alt="Logo just a wayback">
         </a>
-         <a class="header__translateLink" href="#">
-          <img class="header__translateLogo" src="/public/icons/gb_flag.svg" alt="Drapeau anglais">
+         <a class="header__translateLink" href="/fr/articles/livre.html">
+          <img class="header__translateLogo" src="/public/icons/french_flag.svg" alt="Drapeau anglais">
         </a> 
         <div x-data="{ isOpen:false }">
           <img class="header__menuBtn" @click="isOpen = ! isOpen" src="/public/icons/menu.svg">
-          <nav class="header__menu" x-show="isOpen">
-            <ul class="menu__list">
-              <li class="menu__item">
-                <a class="menu__link" href="index.html">> Accueil</a>
-              </li>
-              <li class="menu__item">
-                <a class="menu__link" href="fr/autres_pages/autresprojets.html">> Autres projets</a>
-              </li>
-              <li class="menu__item">
-                <a class="menu__link" href="fr/autres_pages/apropos.html">> A propos</a>
-              </li>
-              <li class="menu__item">
-                <a class="menu__link" href="fr/autres_pages/contact.html">> Contact</a>
-              </li>
-              <li class="menu__item">
-                <a class="menu__link" href="fr/autres_pages/glossaire.html">> Glossaire</a>
-              </li>
-            </ul>
-          </nav>
+          <div class="test" x-show="isOpen">
+            <nav class="header__menu">
+              <ul class="menu__list">
+                <li class="menu__item">
+                  <a class="menu__link" href="/en/index.html">> Home</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="/en/autres_pages/autresprojets.html">> Other projects</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="/en/autres_pages/apropos.html">> About</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="/en/autres_pages/contact.html">> Contact</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="/en/autres_pages/glossaire.html">> Glossary</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="close__menu" x-show="isOpen" @click="isOpen = ! isOpen"></div>
         </div>
     </header>
 
@@ -45,8 +48,8 @@
         <section class="article__preface">
                 <img class="article__img" src="/public/img/articles/photo_livre.webp" alt="des amis devant un coucher de soleil">
                 <p class="article__source">Illustration : <a href="https://unsplash.com/">Unsplash</a></p>
-                <h1 class="article__grosTitre">“Comment se faire des amis” : Le guide ultime pour se faire des amis</h1>
-                <p class="article__misEnLigne">MIS EN LIGNE 04/10/2022 à 19H24</p>
+                <h1 class="article__grosTitre">“How to Make Friends”: The Ultimate Guide to Making Friends</h1>
+                <p class="article__misEnLigne">ONLINE 04/10/2022 at 7:24 p.m.</p>
                     <div class="article__redacteur">
                         <img class="article__imgRedacteur" src="/public/img/logo_et_redacteur/photo_redacteur.webp" alt="portrait du rédacteur">
                         <p class="article__nomRedacteur">Adrien Leveque</p>
@@ -55,45 +58,29 @@
 
         <section class="article__content">
             <p class="article__paragraphe">
-                Comment se faire des amis de Dale Carnegie est un livre de développement personnel classique qui s'est 
-                vendu à des millions d'exemplaires et a été traduit en plusieurs langues. Le livre est basé sur les propres 
-                expériences et observations de Carnegie, ainsi que sur les recherches qu'il a menées sur le sujet des relations humaines. 
+              How to Make Friends by Dale Carnegie is a classic self-help book that has sold millions of copies and been translated into multiple languages. The book is based on Carnegie's own experiences and observations, as well as his research on the subject of human relationships. 
             </p>
             
             <p class="article__paragraphe">
-                L'idée centrale de Carnegie est que les humains sont des objets sociaux et que la capacité de se faire et de 
-                garder des amis est essentielle pour une vie heureuse et réussie.
+              Carnegie's central idea is that humans are social objects and the ability to make and keep friends is essential for a happy and successful life.
             </p>
 
             <p class="article__paragraphe">
-                Il commence par souligner l'importance de l'amitié. Il déclare que les humains ne sont pas faits 
-                pour vivre seuls et que les amis sont essentiels à notre bien-être mental et physique. Il poursuit 
-                en expliquant que la capacité de se faire des amis n'est pas un talent inné, mais quelque chose qui 
-                peut être appris par la pratique et l'effort.
+              He begins by emphasizing the importance of friendship. He states that humans are not meant to live alone and that friends are essential to our mental and physical well-being. He goes on to explain that the ability to make friends is not an innate talent, but something that can be learned through practice and effort.
             </p>
 
-            <h3 class="article__interTitre"><a href="/fr/autres_pages/extrait-de-livre.html"">Lisez un extrait de cette oeuvre ↗</a></h3>
+            <h3 class="article__interTitre"><a href="/en/autres_pages/extrait-de-livre.html"">Read an excerpt from this work ↗</a></h3>
 
             <p class="article__paragraphe">
-                Ensuite, Carnegie fournit un guide étape par étape pour se faire des amis. Il commence par souligner 
-                l'importance de s'intéresser aux autres et de faire en sorte qu'ils se sentent importants. Il conseille 
-                ensuite aux lecteurs d'éviter les émotions négatives telles que l'envie, la jalousie et l'apitoiement sur soi, 
-                car elles ne serviront qu'à repousser des amis potentiels. Au lieu de cela, Carnegie recommande de cultiver 
-                des émotions positives telles que la sincérité, la chaleur et l'humour. Il insiste également sur l'importance 
-                d'être un bon auditeur et d'être attentionné et serviable.
+              Next, Carnegie provides a step-by-step guide to making friends. He begins by emphasizing the importance of caring about others and making them feel important. He then advises readers to avoid negative emotions such as envy, jealousy and self-pity, as these will only serve to repel potential friends. Instead, Carnegie recommends cultivating positive emotions such as sincerity, warmth, and humor. He also emphasizes the importance of being a good listener and being caring and helpful.
             </p>
 
             <p class="article__paragraphe">
-                Enfin, Carnegie offre quelques conseils pour entretenir des amitiés. Il suggère de faire un effort pour 
-                rester en contact avec ses amis, même lorsque nous sommes occupés, et d'être généreux de notre temps et 
-                de notre attention. Il nous exhorte également à pardonner lorsque nos amis font des erreurs, car cela est 
-                essentiel pour une amitié durable.
+              Finally, Carnegie offers some tips for nurturing friendships. He suggests making an effort to stay in touch with friends, even when we're busy, and being generous with our time and attention. He also urges us to forgive when our friends make mistakes, as this is essential for a lasting friendship.
             </p>
                 
             <p class="article__paragraphe">
-                Le livre de Carnegie est une lecture essentielle pour quiconque souhaite améliorer ses compétences sociales 
-                et nouer des amitiés durables. Ses conseils sont aussi pertinents aujourd'hui qu'ils l'étaient lorsque le livre 
-                a été publié pour la première fois, et ils aideront certainement tous ceux qui le suivront.
+              Carnegie's book is essential reading for anyone looking to improve their social skills and form lasting friendships. His advice is as relevant today as it was when the book was first published, and it will certainly help anyone who follows it.
             </p>
 
            
@@ -102,10 +89,10 @@
         <!-- <img src="public/icons/Ligne de séparation d'article.svg" alt="ligne de séparation"> -->
 
         <section class="autre__article">
-            <h4 class="article__recommandation">Cela peut vous intéresser :</h4>
+            <h4 class="article__recommandation">You may be interested :</h4>
             <a href="musique.html">
                 <img class="article__imgRecommandation" src="/public/img/articles/photo_musique.webp" alt="une photo de nekfeu">
-                <p class="article__titre">Nekfeu "On verra" : un chef-d'œuvre musical</p>
+                <p class="article__titre">Nekfeu "On verra": a musical masterpiece</p>
             </a>
         </section>
     </main>

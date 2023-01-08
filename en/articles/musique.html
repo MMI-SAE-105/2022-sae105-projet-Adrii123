@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Article "Comment se faire des amis" - Just a Wayback</title>
+    <title>Nekfeu "On verra" Article - Just a Wayback</title>
     <link rel="stylesheet" href="/src/css/style.css">
     <link rel="icon" href="/public/img/logo_et_redacteur/logo_justawayback.webp">
     <script src="//unpkg.com/alpinejs" defer></script>
@@ -14,30 +14,33 @@
         <a class="header__logoLink" href="/index.html">
             <img class="header__logo" src="/public/img/logo_et_redacteur/logo_justawayback.webp" alt="Logo just a wayback">
         </a>
-         <a class="header__translateLink" href="#">
-          <img class="header__translateLogo" src="/public/icons/gb_flag.svg" alt="Drapeau anglais">
+         <a class="header__translateLink" href="/fr/articles/musique.html">
+          <img class="header__translateLogo" src="/public/icons/french_flag.svg" alt="Drapeau anglais">
         </a> 
         <div x-data="{ isOpen:false }">
           <img class="header__menuBtn" @click="isOpen = ! isOpen" src="/public/icons/menu.svg">
-          <nav class="header__menu" x-show="isOpen">
-            <ul class="menu__list">
-              <li class="menu__item">
-                <a class="menu__link" href="index.html">> Accueil</a>
-              </li>
-              <li class="menu__item">
-                <a class="menu__link" href="fr/autres_pages/autresprojets.html">> Autres projets</a>
-              </li>
-              <li class="menu__item">
-                <a class="menu__link" href="fr/autres_pages/apropos.html">> A propos</a>
-              </li>
-              <li class="menu__item">
-                <a class="menu__link" href="fr/autres_pages/contact.html">> Contact</a>
-              </li>
-              <li class="menu__item">
-                <a class="menu__link" href="fr/autres_pages/glossaire.html">> Glossaire</a>
-              </li>
-            </ul>
-          </nav>
+          <div class="test" x-show="isOpen">
+            <nav class="header__menu">
+              <ul class="menu__list">
+                <li class="menu__item">
+                  <a class="menu__link" href="/en/index.html">> Home</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="/en/autres_pages/autresprojets.html">> Other projects</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="/en/autres_pages/apropos.html">> About</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="/en/autres_pages/contact.html">> Contact</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="/en/autres_pages/glossaire.html">> Glossary</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="close__menu" x-show="isOpen" @click="isOpen = ! isOpen"></div>
         </div>
     </header>
 
@@ -45,8 +48,8 @@
         <section class="article__preface">
                 <img class="article__img" src="/public/img/articles/photo_musique.webp" alt="une photo de nekfeu">
                 <p class="article__source">Illustration : <a href="https://unsplash.com/">Unsplash</a></p>
-                <h1 class="article__grosTitre">Nekfeu "On verra" : un chef-d'œuvre musical</h1>
-                <p class="article__misEnLigne">MIS EN LIGNE 04/10/2022 à 19H24</p>
+                <h1 class="article__grosTitre">Nekfeu "On verra": a musical masterpiece</h1>
+                <p class="article__misEnLigne">ONLINE 04/10/2022 at 7:24 p.m.</p>
                     <div class="article__redacteur">
                         <img class="article__imgRedacteur" src="/public/img/logo_et_redacteur/photo_redacteur.webp" alt="portrait du rédacteur">
                         <p class="article__nomRedacteur">Adrien Leveque</p>
@@ -55,54 +58,48 @@
 
         <section class="article__content">
             <p class="article__paragraphe">
-                "On verra" est le 11ème titre de l'album "Feu". Le single sorti le 1 mai 2015 est la musique qui signera le début 
-                de son ascension sur la scène française du rap, elle est par ailleurs le titre de l'artiste le plus "connu" et sera 
-                un véritable succès lors de sa sortie été 2015.
+              "We will see" is the 11th title of the album "Feu". The single released on May 1, 2015 is the music that will mark the beginning of his rise on the French rap scene, it is also the title of the most "known" artist and will be a real success when it is released in summer 2015 .
             </p>
             
             <p class="article__paragraphe">
-                Ce single lui vaudra de recevoir la certification de diamant de la SNEP ainsi qu'un cumul de 80 millions de 
-                vues sur Youtube. Nekfeu tounera un clip dans lequel Mister V et Malika Ménard feront leurs apparitions.
+              This single will earn him the diamond certification of SNEP as well as a cumulative 80 million views on Youtube. Nekfeu will make a clip in which Mister V and Malika Ménard will make their appearances.
             </p>
 
-            <h3 class="article__interTitre"> Une musique réfléchi </h3>
+            <h3 class="article__interTitre">A thoughtful music </h3>
 
             <p class="article__paragraphe">
-                Dans sa musique, Nekfeu livre une critique avant tout sociétale ainsi que du temps qui passe, c'est une 
-                forme d'autoremise en question sur ses propres agissements. Plusieurs thêmes sont récurrents comme celui 
-                de l'amour,de la drogue et de l'alcool ou encore du temps. 
+              In his music, Nekfeu delivers a criticism above all societal as well as the passage of time, it is a form of self-questioning on his own actions. Several themes are recurrent such as love, drugs and alcohol or time. 
             </p>
             
             <p class="article__paragraphe">
-                Ses paroles sont profondes, elles nous procurent des émotions comme peu de chansonspeuvent le faire, elle 
-                nous apporte de la positivité. C'est aussi une véritable leçon de vie, il nous montre l'importance de profiter 
-                de la vie, car nous n'en avons qu'une et qu'il serait bête de la gâcher, il n'a d'ailleurs de cesse de nous le 
-                rappeller tout au long de son oeuvre. 
+              Its lyrics are deep, it gives us emotions like few songs can do, it brings us positivity. It's also a real life lesson, he shows us the importance of enjoying life, because we only have one and it would be stupid to waste it, he never stops to remind us of this throughout his work. 
             </p>
 
+            <h3 class="article__interTitre">Listen to it now</h3>
+
+            <video class="video_player" width="320" height="240" controls poster="/public/img/articles/miniature_video-player.jpg">
+              <source src="https://res.cloudinary.com/dqrpeqobb/video/upload/v1673097484/Nekfeu_-_On_Verra_Clip_Officiel_gu3kti.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+
             <p class="article__paragraphe">
-                Ses paroles ont été souvent félicités pour leurs sens fort et leur écriture prodigieuse. Elles transmettent 
-                un message intemporel, en effet elles étaient d'actualité il y a 7 ans et le sont toujours aujourd'hui. « On verra » 
-                possède aussi un pouvoir apaisant qui la rends unique. 
+              His lyrics have often been praised for their strong meaning and prodigious writing. They transmit a timeless message, indeed they were topical 7 years ago and still are today. "We'll see" also has a soothing power that makes it unique. 
             </p>
 
-            <h3 class="article__interTitre">Une critique fendu en deux</h3>
+            <h3 class="article__interTitre">A criticism split in two</h3>
 
             <p class="article__paragraphe">
-                Cette musique a beaucoup fais débattre et a diviser la communauté de l'artiste, certains considère ce single 
-                comme un un chef d'oeuvre musical tandis ce que d'autrestrouvent qu'elle ne reflète pas le vrai talent de l'artiste 
-                et ont été fortement déçu. Quoi qu'il en soit, on peut dire que cette musique a très bien marché jusqu'à aujourdh'ui 
-                et qu'elle a encore de beaux jours devant elle. 
+              This music has caused a lot of debate and has divided the community of the artist, some consider this single as a musical masterpiece while others find that it does not reflect the true talent of the artist and have been strongly disappointed. Be that as it may, we can say that this music has worked very well until today and that it still has a bright future ahead of it. 
             </p>
         </section>
 
         <!-- <img src="public/icons/Ligne de séparation d'article.svg" alt="ligne de séparation"> -->
 
         <section class="autre__article">
-            <h4 class="article__recommandation">Cela peut vous intéresser :</h4>
+            <h4 class="article__recommandation">You may be interested :</h4>
             <a href="espoir.html">
                 <img class="article__imgRecommandation" src="/public/img/articles/photo_espoir.webp" alt="un ordinateur">
-                <p class="article__titre">Nekfeu "On verra" : un chef-d'œuvre musical</p>
+                <p class="article__titre">New technologies: how can they change our daily lives ?</p>
             </a>
         </section>
     </main>

@@ -22,25 +22,28 @@
     </a> 
     <div x-data="{ isOpen: false }">
         <img class="header__menuBtn" @click="isOpen = ! isOpen" src="/public/icons/menu.svg">
-        <nav class="header__menu" x-show="isOpen">
-        <ul class="menu__list">
-            <li class="menu__item">
-            <a class="menu__link" href="/index.html">> Home</a>
-            </li>
-            <li class="menu__item">
-            <a class="menu__link" href="/en/autres_pages/autresprojets.html">> Other Projects</a>
-            </li>
-            <li class="menu__item">
-            <a class="menu__link" href="/en/autres_pages/apropos.html">> About</a>
-            </li>
-            <li class="menu__item">
-            <a class="menu__link" href="/en/autres_pages/contact.html">> Contact</a>
-            </li>
-            <li class="menu__item">
-            <a class="menu__link" href="/en/autres_pages/glossaire.html">> Glossary</a>
-            </li>
-        </ul>
-        </nav>
+        <div class="test" x-show="isOpen">
+          <nav class="header__menu">
+          <ul class="menu__list">
+              <li class="menu__item">
+              <a class="menu__link" href="/en/index.html">> Home</a>
+              </li>
+              <li class="menu__item">
+              <a class="menu__link" href="/en/autres_pages/autresprojets.html">> Other Projects</a>
+              </li>
+              <li class="menu__item">
+              <a class="menu__link" href="/en/autres_pages/apropos.html">> About</a>
+              </li>
+              <li class="menu__item">
+              <a class="menu__link" href="/en/autres_pages/contact.html">> Contact</a>
+              </li>
+              <li class="menu__item">
+              <a class="menu__link" href="/en/autres_pages/glossaire.html">> Glossary</a>
+              </li>
+          </ul>
+          </nav>
+        </div>
+        <div class="close__menu" x-show="isOpen" @click="isOpen = ! isOpen"></div>
     </div>
     </header>
 

@@ -5,7 +5,7 @@
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-      <title>Accueil - Just a Wayback</title>
+      <title>Other projects - Just a Wayback</title>
 
       <link rel="stylesheet" href="/src/css/style.css">
       <link rel="icon" href="/public/img/logo_et_redacteur/logo_justawayback.webp">
@@ -17,36 +17,39 @@
         <a class="header__logoLink" href="/index.html">
             <img class="header__logo" src="/public/img/logo_et_redacteur/logo_justawayback.webp" alt="Logo just a wayback">
         </a>
-         <a class="header__translateLink" href="#">
-          <img class="header__translateLogo" src="/public/icons/gb_flag.svg" alt="Drapeau anglais">
+         <a class="header__translateLink" href="/fr/autres_pages/autresprojets.html">
+          <img class="header__translateLogo" src="/public/icons/french_flag.svg" alt="Drapeau anglais">
         </a> 
         <div x-data="{ isOpen:false }">
           <img class="header__menuBtn" @click="isOpen = ! isOpen" src="/public/icons/menu.svg">
-          <nav class="header__menu" x-show="isOpen">
-            <ul class="menu__list">
-              <li class="menu__item">
-                <a class="menu__link" href="index.html">> Accueil</a>
-              </li>
-              <li class="menu__item">
-                <a class="menu__link" href="fr/autres_pages/autresprojets.html">> Autres projets</a>
-              </li>
-              <li class="menu__item">
-                <a class="menu__link" href="fr/autres_pages/apropos.html">> A propos</a>
-              </li>
-              <li class="menu__item">
-                <a class="menu__link" href="fr/autres_pages/contact.html">> Contact</a>
-              </li>
-              <li class="menu__item">
-                <a class="menu__link" href="fr/autres_pages/glossaire.html">> Glossaire</a>
-              </li>
-            </ul>
-          </nav>
+          <div class="test" x-show="isOpen">
+              <nav class="header__menu">
+                <ul class="menu__list">
+                  <li class="menu__item">
+                    <a class="menu__link" href="/en/index.html">> Home</a>
+                  </li>
+                  <li class="menu__item">
+                    <a class="menu__link" href="/en/autres_pages/autresprojets.html">> Other projects</a>
+                  </li>
+                  <li class="menu__item">
+                    <a class="menu__link" href="/en/autres_pages/apropos.html">> About</a>
+                  </li>
+                  <li class="menu__item">
+                    <a class="menu__link" href="/en/autres_pages/contact.html">> Contact</a>
+                  </li>
+                  <li class="menu__item">
+                    <a class="menu__link" href="/en/autres_pages/glossaire.html">> Glossary</a>
+                  </li>
+                </ul>
+              </nav>
+          </div>
+          <div class="close__menu" x-show="isOpen" @click="isOpen = ! isOpen"></div>
         </div>
-      </header>
+    </header>
 
     <main class="main__autrespages">
-        <h1 class="autrespages__titre">Autres projets</h1>
-        <p class="autrespages__paragraphe">Découvrez les réalisations d’autres étudiants de MMI !😍</p>
+        <h1 class="autrespages__titre">Other projects</h1>
+        <p class="autrespages__paragraphe">Discover the achievements of other MMI students!😍</p>
         <ul class="autresprojets__liste">
             <li class="autresprojets__liste__item">
                 <p class="autresprojets__list_content">Jules Houbron</p>

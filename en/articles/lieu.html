@@ -22,25 +22,28 @@
     </a> 
     <div x-data="{ isOpen: false }">
         <img class="header__menuBtn" @click="isOpen = ! isOpen" src="/public/icons/menu.svg">
-        <nav class="header__menu" x-show="isOpen">
-        <ul class="menu__list">
-            <li class="menu__item">
-            <a class="menu__link" href="/index.html">> Home</a>
-            </li>
-            <li class="menu__item">
-            <a class="menu__link" href="/en/autres_pages/autresprojets.html">> Other Projects</a>
-            </li>
-            <li class="menu__item">
-            <a class="menu__link" href="/en/autres_pages/apropos.html">> About</a>
-            </li>
-            <li class="menu__item">
-            <a class="menu__link" href="/en/autres_pages/contact.html">> Contact</a>
-            </li>
-            <li class="menu__item">
-            <a class="menu__link" href="/en/autres_pages/glossaire.html">> Glossary</a>
-            </li>
-        </ul>
-        </nav>
+        <div class="test" x-show="isOpen">
+          <nav class="header__menu">
+          <ul class="menu__list">
+              <li class="menu__item">
+              <a class="menu__link" href="/en/index.html">> Home</a>
+              </li>
+              <li class="menu__item">
+              <a class="menu__link" href="/en/autres_pages/autresprojets.html">> Other Projects</a>
+              </li>
+              <li class="menu__item">
+              <a class="menu__link" href="/en/autres_pages/apropos.html">> About</a>
+              </li>
+              <li class="menu__item">
+              <a class="menu__link" href="/en/autres_pages/contact.html">> Contact</a>
+              </li>
+              <li class="menu__item">
+              <a class="menu__link" href="/en/autres_pages/glossaire.html">> Glossary</a>
+              </li>
+          </ul>
+          </nav>
+        </div>
+        <div class="close__menu" x-show="isOpen" @click="isOpen = ! isOpen"></div>
     </div>
     </header>
 
@@ -71,7 +74,7 @@
               Silicon Valley is a nickname for the southern part of the San Francisco Bay Area in the Santa Clara Valley, which serves as a global center for high technology, venture capital and innovation. The region is home to many of the world's largest technology companies in the world, as well as thousands of startups. And it's not just one among other industries. 
             </p>
 
-            <h3 class="article__interTitre article__itemLink"><a href="/fr/autres_pages/frise-lieu-similaire.html">Discover other high technology places technologies</a></h3>
+            <h3 class="article__interTitre article__itemLink"><a href="/en/autres_pages/frise-lieu-similaire.html">Discover other high technology places technologies</a></h3>
 
             <p class="article__paragraphe">
               The region has its origins in the Santa Clara Valley, which was once known for its apricot and plum orchards. In the late 19th century, the area became home to a number of large estates, and later still, it became the site of Stanford University. After World War II, the Santa Clara Valley became a hub for defense contractors, and in the 1950s and 1960s, it became known for its aerospace industry.

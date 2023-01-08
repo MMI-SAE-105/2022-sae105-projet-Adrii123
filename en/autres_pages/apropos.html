@@ -4,67 +4,58 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A propos - Just a Wayback</title>
+    <title>About - Just a Wayback</title>
     <link rel="stylesheet" href="/src/css/style.css">
     <link rel="icon" href="/public/img/logo_et_redacteur/logo_justawayback.webp">
     <script src="//unpkg.com/alpinejs" defer></script>
 </head>
 <body>
-    <header class="header">
-        <a class="header__logoLink" href="/index.html">
-            <img class="header__logo" src="/public/img/logo_et_redacteur/logo_justawayback.webp" alt="Logo just a wayback">
-        </a>
-         <a class="header__translateLink" href="#">
-          <img class="header__translateLogo" src="/public/icons/gb_flag.svg" alt="Drapeau anglais">
-        </a> 
-        <div x-data="{ isOpen:false }">
-          <img class="header__menuBtn" @click="isOpen = ! isOpen" src="/public/icons/menu.svg">
-          <nav class="header__menu" x-show="isOpen">
+  <header class="header">
+    <a class="header__logoLink" href="/index.html">
+        <img class="header__logo" src="/public/img/logo_et_redacteur/logo_justawayback.webp" alt="Logo just a wayback">
+    </a>
+     <a class="header__translateLink" href="/fr/autres_pages/apropos.html">
+      <img class="header__translateLogo" src="/public/icons/french_flag.svg" alt="Drapeau anglais">
+    </a> 
+    <div x-data="{ isOpen:false }">
+      <img class="header__menuBtn" @click="isOpen = ! isOpen" src="/public/icons/menu.svg">
+      <div class="test" x-show="isOpen">
+          <nav class="header__menu">
             <ul class="menu__list">
               <li class="menu__item">
-                <a class="menu__link" href="index.html">> Accueil</a>
+                <a class="menu__link" href="/en/index.html">> Home</a>
               </li>
               <li class="menu__item">
-                <a class="menu__link" href="fr/autres_pages/autresprojets.html">> Autres projets</a>
+                <a class="menu__link" href="/en/autres_pages/autresprojets.html">> Other projects</a>
               </li>
               <li class="menu__item">
-                <a class="menu__link" href="fr/autres_pages/apropos.html">> A propos</a>
+                <a class="menu__link" href="/en/autres_pages/apropos.html">> About</a>
               </li>
               <li class="menu__item">
-                <a class="menu__link" href="fr/autres_pages/contact.html">> Contact</a>
+                <a class="menu__link" href="/en/autres_pages/contact.html">> Contact</a>
               </li>
               <li class="menu__item">
-                <a class="menu__link" href="fr/autres_pages/glossaire.html">> Glossaire</a>
+                <a class="menu__link" href="/en/autres_pages/glossaire.html">> Glossary</a>
               </li>
             </ul>
           </nav>
-        </div>
-    </header>
+      </div>
+      <div class="close__menu" x-show="isOpen" @click="isOpen = ! isOpen"></div>
+    </div>
+</header>
 
     <main class="main__autrespages">
-        <h1 class="autrespages__titre">A propos</h1>
-        <p>C'est moi</p>
+        <h1 class="autrespages__titre">About</h1>
+        <!-- <p>C'est moi</p> -->
         <img class="apropos__imgRedacteur" src="/public/img/logo_et_redacteur/photo_a_propos.webp" alt="Photo du rédacteur">
-        <img class="apropos__fleche" src="/public/icons/Flèche.svg" alt="flèche">
-        <p class="paragraphe__autrespages">Actuellement étudiant au département MMI de 
-            l’IUT de Belfort-Montbéliard, je travaille sur notre 
-            premier projet “Notes pour plus tard”. </p>
+        <!-- <img class="apropos__fleche" src="/public/icons/Flèche.svg" alt="flèche"> -->
+        <p class="paragraphe__autrespages">Currently a student in the MMI department of the IUT of Belfort-Montbéliard, I am working on our first project “Notes for later”.</p>
 
-        <p class="paragraphe__autrespages">Le but de ce projet est de concevoir un site web 
-            dans le but d’être consulté dans plusieurs années 
-            et ainsi agir comme une sorte de capsule tempo-
-            relle. Ce projet permet ainsi appréhender l’approche 
-            du design et du dévellopement web. </p>
+        <p class="paragraphe__autrespages">The goal of this project is to design a website in order to be consulted in several years and thus act as a kind of time capsule. This project thus makes it possible to understand the approach of design and web development.</p>
         
-        <p class="paragraphe__autrespages">J’ai choisi de partir dans un style avec des couleurs
-            qui peuvent rappeler l’époque des années 80, le 
-            logo du site vient aussi soutenir cette idée avec 
-            un design à l’ancienne. </p>
+        <p class="paragraphe__autrespages">I chose to go in a style with colors that can recall the era of the 80s, the logo of the site also supports this idea with an old-fashioned design.</p>
 
-        <p class="paragraphe__autrespages">
-            Pour toute remarques constructives permettant de 
-            m’aider à améliorer cette maquette et m’amélirorer
-            en général, cliquez <a href="mailto:adrien.leveque@edu.univ-fcomte.fr">ici</a></p>
+        <p class="paragraphe__autrespages">For any constructive comments to help me improve this model and improve myself in general, click<a href="mailto:adrien.leveque@edu.univ-fcomte.fr"> here</a>.</p>
     </main>
 
     <footer class="footer">

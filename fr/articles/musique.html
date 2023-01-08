@@ -14,30 +14,33 @@
         <a class="header__logoLink" href="/index.html">
             <img class="header__logo" src="/public/img/logo_et_redacteur/logo_justawayback.webp" alt="Logo just a wayback">
         </a>
-         <a class="header__translateLink" href="#">
+         <a class="header__translateLink" href="/en/articles/musique.html">
           <img class="header__translateLogo" src="/public/icons/gb_flag.svg" alt="Drapeau anglais">
         </a> 
         <div x-data="{ isOpen:false }">
           <img class="header__menuBtn" @click="isOpen = ! isOpen" src="/public/icons/menu.svg">
-          <nav class="header__menu" x-show="isOpen">
-            <ul class="menu__list">
-              <li class="menu__item">
-                <a class="menu__link" href="index.html">> Accueil</a>
-              </li>
-              <li class="menu__item">
-                <a class="menu__link" href="fr/autres_pages/autresprojets.html">> Autres projets</a>
-              </li>
-              <li class="menu__item">
-                <a class="menu__link" href="fr/autres_pages/apropos.html">> A propos</a>
-              </li>
-              <li class="menu__item">
-                <a class="menu__link" href="fr/autres_pages/contact.html">> Contact</a>
-              </li>
-              <li class="menu__item">
-                <a class="menu__link" href="fr/autres_pages/glossaire.html">> Glossaire</a>
-              </li>
-            </ul>
-          </nav>
+          <div class="test"x-show="isOpen">
+            <nav class="header__menu">
+              <ul class="menu__list">
+                <li class="menu__item">
+                  <a class="menu__link" href="/index.html">> Accueil</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="/fr/autres_pages/autresprojets.html">> Autres projets</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="/fr/autres_pages/apropos.html">> A propos</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="/fr/autres_pages/contact.html">> Contact</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="/fr/autres_pages/glossaire.html">> Glossaire</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="close__menu" x-show="isOpen" @click="isOpen = ! isOpen"></div>
         </div>
     </header>
 
@@ -80,6 +83,13 @@
                 rappeller tout au long de son oeuvre. 
             </p>
 
+            <h3 class="article__interTitre">Ecoutez la maintenant</h3>
+
+            <video class="video_player" width="320" height="240" controls poster="/public/img/articles/miniature_video-player.jpg">
+              <source src="https://res.cloudinary.com/dqrpeqobb/video/upload/v1673097484/Nekfeu_-_On_Verra_Clip_Officiel_gu3kti.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+
             <p class="article__paragraphe">
                 Ses paroles ont été souvent félicités pour leurs sens fort et leur écriture prodigieuse. Elles transmettent 
                 un message intemporel, en effet elles étaient d'actualité il y a 7 ans et le sont toujours aujourd'hui. « On verra » 
@@ -95,6 +105,7 @@
                 et qu'elle a encore de beaux jours devant elle. 
             </p>
         </section>
+        
 
         <!-- <img src="public/icons/Ligne de séparation d'article.svg" alt="ligne de séparation"> -->
 
@@ -102,7 +113,7 @@
             <h4 class="article__recommandation">Cela peut vous intéresser :</h4>
             <a href="espoir.html">
                 <img class="article__imgRecommandation" src="/public/img/articles/photo_espoir.webp" alt="un ordinateur">
-                <p class="article__titre">Nekfeu "On verra" : un chef-d'œuvre musical</p>
+                <p class="article__titre">Nouvelles technologies: comment peuvent-elles changer notre quotidien ?</p>
             </a>
         </section>
     </main>

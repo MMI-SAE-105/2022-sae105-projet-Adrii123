@@ -17,73 +17,76 @@
         <a class="header__logoLink" href="/index.html">
             <img class="header__logo" src="/public/img/logo_et_redacteur/logo_justawayback.webp" alt="Logo just a wayback">
         </a>
-         <a class="header__translateLink" href="#">
+         <a class="header__translateLink" href="/en/autres_pages/filmographie.html">
           <img class="header__translateLogo" src="/public/icons/gb_flag.svg" alt="Drapeau anglais">
         </a> 
         <div x-data="{ isOpen:false }">
           <img class="header__menuBtn" @click="isOpen = ! isOpen" src="/public/icons/menu.svg">
-          <nav class="header__menu" x-show="isOpen">
-            <ul class="menu__list">
-              <li class="menu__item">
-                <a class="menu__link" href="index.html">> Accueil</a>
-              </li>
-              <li class="menu__item">
-                <a class="menu__link" href="fr/autres_pages/autresprojets.html">> Autres projets</a>
-              </li>
-              <li class="menu__item">
-                <a class="menu__link" href="fr/autres_pages/apropos.html">> A propos</a>
-              </li>
-              <li class="menu__item">
-                <a class="menu__link" href="fr/autres_pages/contact.html">> Contact</a>
-              </li>
-              <li class="menu__item">
-                <a class="menu__link" href="fr/autres_pages/glossaire.html">> Glossaire</a>
-              </li>
-            </ul>
-          </nav>
+          <div class="test" x-show="isOpen">
+            <nav class="header__menu">
+              <ul class="menu__list">
+                <li class="menu__item">
+                  <a class="menu__link" href="/index.html">> Accueil</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="/fr/autres_pages/autresprojets.html">> Autres projets</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="/fr/autres_pages/apropos.html">> A propos</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="/fr/autres_pages/contact.html">> Contact</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="/fr/autres_pages/glossaire.html">> Glossaire</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="close__menu" x-show="isOpen" @click="isOpen = ! isOpen"></div>
         </div>
       </header>
 
-    <main>
-        <h1>Filmographie</h1>
-        <ul>
-            <li>
-                <img src="public/img/Rectangle 20.webp" alt="affiche de film">
-                <h3>Buddy - 2003</h3>
-                <p>Sorti en 2003, Buddy est le 
-                    premier film de Morten Tyldum, 
-                    d'après un scénario de 
-                    Lars Gudmestad. Il remportera 
+    <main class="main__autrespages">
+        <h1 class="autrespages__titre">Filmographie</h1>
+        <ul class="list__autreslieux autres__films">
+            <li class="paragraphe__autreslieux">
+                <img class="article__img" src="/public/img/filmographie/affiche_buddy.webp" alt="affiche de film">
+                <h3 class="article__titre">Buddy - 2003</h3>
+                <p class="paragraphe__autrespages espacement_films">Sorti en 2003, Buddy est le
+                    premier film de Morten Tyldum,
+                    d'après un scénario de
+                    Lars Gudmestad. Il remportera
                     deux <a href="https://fr.wikipedia.org/wiki/Prix_Amanda">prix Amanda en 2004.</a>
                 </p>
-                <p>
+                <!-- <p>
                     <a href="https://fr.wikipedia.org/wiki/Buddy_(film)">En découvrir davantage</a>
-                </p>
+                </p> -->
             </li>
 
-            <img src="public/icons/Ligne de séparation d'article.svg" alt="ligne de séparation">
+            <!-- <img src="public/icons/Ligne de séparation d'article.svg" alt="ligne de séparation"> -->
 
             <li>
-                <img src="public/img/Rectangle 20-1.webp" alt="affiche de film">
-                <h3>Fallen Angels - 2008</h3>
-                <p>Sorti en 2003, Fallen Angels 
+                <img class="article__img" src="/public/img/filmographie/affiche_fallen_angels.webp" alt="affiche de film">
+                <h3 class="article__titre">Fallen Angels - 2008</h3>
+                <p class="paragraphe__autrespages espacement_films">Sorti en 2003, Fallen Angels 
                     est le deuxième film de ce même 
                     réalisateur et c'est la quatrième 
                     adaptation au cinéma de la série 
                     de romans policiers écrite 
                     par <a href="https://fr.wikipedia.org/wiki/Gunnar_Staalesen">Gunnar Staalesen.</a>
                 </p>
-                <p>
+                <!-- <p>
                     <a href="https://fr.wikipedia.org/wiki/Fallen_Angels_(film,_2008)">En découvrir davantage</a>
-                </p>
+                </p> -->
             </li>
 
-            <img src="public/icons/Ligne de séparation d'article.svg" alt="ligne de séparation">
+            <!-- <img src="public/icons/Ligne de séparation d'article.svg" alt="ligne de séparation"> -->
 
             <li>
-                <img src="public/img/Rectangle 20-2.webp" alt="affiche de film">
-                <h3>Headhunters - 2011</h3>
-                <p>Headhunters est un thriller 
+                <img class="article__img" src="/public/img/filmographie/affiche_headhunters.webp" alt="affiche de film">
+                <h3 class="article__titre">Headhunters - 2011</h3>
+                <p class="paragraphe__autrespages espacement_films">Headhunters est un thriller 
                     norvégo-allemand réalisé par 
                     Morten Tyldum et sorti en 
                     2011.
@@ -91,17 +94,17 @@
                     du roman <a href="https://fr.wikipedia.org/wiki/Chasseurs_de_t%C3%AAtes">Chasseurs de têtes </a>
                     de <a href="https://fr.wikipedia.org/wiki/Jo_Nesb%C3%B8">Jo Nesbø.</a>
                 </p>
-                <p>
+                <!-- <p>
                     <a href="https://fr.wikipedia.org/wiki/Headhunters_(film)">En découvrir davantage</a>
-                </p>
+                </p> -->
             </li>
 
-            <img src="public/icons/Ligne de séparation d'article.svg" alt="ligne de séparation">
+            <!-- <img src="public/icons/Ligne de séparation d'article.svg" alt="ligne de séparation"> -->
 
             <li>
-                <img src="public/img/Rectangle 20-3.webp" alt="affiche de film">
-                <h3>Imitation game - 2014</h3>
-                <p>Imitation Game est un film bio-
+                <img class="article__img" src="/public/img/filmographie/affiche_imitation_game.webp" alt="affiche de film">
+                <h3 class="article__titre">Imitation game - 2014</h3>
+                <p class="paragraphe__autrespages espacement_films">Imitation Game est un film bio-
                     graphique américain réalisé par 
                     Morten Tyldum, 
                     sorti en 2014. 
@@ -110,39 +113,39 @@
                     tographique de la biographie 
                     Alan Turing <a href="https://fr.wikipedia.org/wiki/Andrew_Hodges">d'Andrew Hodges.</a> 
                 </p>
-                <p>
+                <!-- <p>
                     <a href="https://fr.wikipedia.org/wiki/Imitation_Game">En découvrir davantage</a>
-                </p>
+                </p> -->
             </li>
 
-            <img src="public/icons/Ligne de séparation d'article.svg" alt="ligne de séparation">
+            <!-- <img src="public/icons/Ligne de séparation d'article.svg" alt="ligne de séparation"> -->
 
             <li>
-                <img src="public/img/Rectangle 20-4.webp" alt="affiche de film">
-                <h3>Passenger - 2016</h3>
-                <p>Passengers, 
+                <img class="article__img" src="/public/img/filmographie/affiche_passengers.webp" alt="affiche de film">
+                <h3 class="article__titre">Passenger - 2016</h3>
+                <p class="paragraphe__autrespages espacement_films">Passengers, 
                     est un film de science-fiction américain 
                     réalisé par Morten Tyldum, sorti en 2016.</p>
-                <p>
+                <!-- <p>
                     <a href="https://fr.wikipedia.org/wiki/Passengers_(film)#Distinctions">En découvrir davantage</a>
-                </p>
+                </p> -->
             </li>
 
-            <img src="public/icons/Ligne de séparation d'article.svg" alt="ligne de séparation">
-            
+            <!-- <img src="public/icons/Ligne de séparation d'article.svg" alt="ligne de séparation">
+             -->
             <li>
-                <img src="public/img/Rectangle 20-5.webp" alt="affiche de film">
-                <h3>Morten Tyldum</h3>
-                <p>Morten Tyldum est un réalisa-
-                    teur norvégien, né le 19 mai 
+                <img class="article__img" src="/public/img/filmographie/photo_morten_tyldum.webp" alt="affiche de film">
+                <h3 class="article__titre">Morten Tyldum</h3>
+                <p class="paragraphe__autrespages espacement_films">Morten Tyldum est un réalisa-
+                  teur norvégien, né le 19 mai 
                     1967 à Bergen dans le comté 
                     de Hordaland. Tout ses films 
                     seront plus ou moins à succès
                     malgré son nombre restreint.
                 </p>
-                <p>
+                <!-- <p>
                     <a href="https://fr.wikipedia.org/wiki/Morten_Tyldum">En découvrir davantage</a>
-                </p>
+                </p> -->
             </li>
         </ul>
     </main>
